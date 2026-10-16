@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>7th Lichfield Scouts - Cubs</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i,900,900i&display=swap">
+    <link rel="stylesheet" href="\CSS/MainStyles.css">
+
+    <link rel="icon" type="image/png" href="\Images/7thLogoW.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" href="\Images/7thLogoB.png" media="(prefers-color-scheme: light)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#1f1f1f">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="\sections">Sections</a>
+                </li>
+                <li>
+                    <a href="\activities_events">Activities & Events</a>
+                </li>
+                <li>
+                    <a href="\about">About Us</a>
+                </li>
+                <li>
+                    <a href="\contact">Contact Us</a>
+                </li>
+                <li>
+                    <a href="https://www.onlinescoutmanager.co.uk/login.php">OSM</a>
+                </li>
+            </ul>
+
+            <ul class="navbar">
+                <li class="logo">
+                    <a href="\">
+                        <img src="\Images/7thLogoB.png" alt="7th Lichfield Scouts Logo" style="height: 100px;">
+                    </a>
+                </li>
+                <li class="hideOnMobile">
+                    <a href="\sections">Sections</a>
+                </li>
+                <li class="hideOnMobile">
+                    <a href="\activities_events">Activities & Events</a>
+                </li>
+                <li class="hideOnMobile">
+                    <a href="\about">About Us</a>
+                </li>
+                <li class="hideOnMobile">
+                    <a href="\contact">Contact Us</a>
+                </li>
+                <li class="hideOnMobile">
+                    <a href="https://www.onlinescoutmanager.co.uk/login.php">OSM</a>
+                </li>
+                <li class="menu-button" onclick=showSidebar()>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"
+                            fill="#1f1f1f">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="breadcrumb">
+            <ul>
+                <li>
+                    <a href="\">Home</a>
+                </li>
+                <li class="arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-chevron-right">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </li>
+                <li>
+                    <a href="\Sections">Sections</a>
+                </li>
+                <li class="arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-chevron-right">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </li>
+                <li>
+                    <b>Cubs</b>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <footer>
+        <img src="\Images/7th_hq_logo_white.png" alt="7th Lichfield Scouts Logo" style="height: 150px;">
+        <hr>
+        <div class="footer_content">
+            <div class="footer_section">
+                <h2>Useful Links</h2>
+                <a href="https://www.scouts.org.uk/">The Scout Association</a><br>
+                <a href="https://www.scouts.org.uk/volunteers/">Volunteer with Scouts</a><br>
+                <a href="https://www.scouts.org.uk/activities/">Scouting Activities</a><br>
+                <a href="https://www.scouts.org.uk/join/">Join Scouts</a><br>
+            </div>
+            <div class="footer_section">
+                <h2>More Info</h2>
+                <a href="\sections">Sections</a><br>
+                <a href="\activities_events">Activities & Events</a><br>
+                <a href="\about">About Us</a><br>
+                <a href="\contact">Contact Us</a><br>
+                <a href="https://www.onlinescoutmanager.co.uk/login.php">OSM</a><br>
+            </div>
+            <div class="footer_section">
+                <h2>Follow Us</h2>
+            </div>
+        </div>
+        <hr>
+        <p><small>7th Lichfield Scout Group is a registered charity.<br>Our charity number is: 1021870.<br>&copy; 2026
+                7th Lichfield Scouts. All rights reserved.</small>
+        </p>
+    </footer>
+
+    <script src="\JS/Menu.js"></script>
+</body>
+
+</html>

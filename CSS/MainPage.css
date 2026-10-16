@@ -1,0 +1,246 @@
+/* Top Welcome Image Part */
+
+.imagebackground {
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+}
+
+.imagebackground_text {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  margin: 50px;
+  padding: 20px;
+  color: white;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Join Us Part */
+
+.join_us {
+  background-color: var(--ScoutBlue);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.join_us div {
+  margin: 20px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.join_us h1 {
+  color: var(--ScoutYellow);
+  text-align: left;
+}
+
+.join_us h3 {
+  color: white;
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.join_us a {
+  color: white;
+  font-size: 17px;
+  text-decoration: none;
+  padding: 5px 12%;
+  margin: 5px;
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+  transition: all .3s ease;
+}
+
+.join_us a:hover {
+  color: Var(--ScoutBlue);
+  background-color: white;
+}
+
+@media(max-width:800px) {
+  .join_us {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .join_us img {
+    width: 80%;
+  }
+
+  .join_us h1 {
+    text-align: center;
+  }
+
+  .join_us h3 {
+    text-align: center;
+  }
+
+  .join_us a {
+    padding: 10px 12%;
+    font-size: 20px;
+  }
+
+}
+
+@media(max-width:500px) {
+  .join_us span {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Section Cards */
+
+.section_card_holder {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.squirrels_card,
+.beavers_card,
+.cubs_card,
+.scouts_card {
+  background-color: #fff;
+  box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.2), 0px 0px 20px 20px rgba(0, 0, 0, 0.19);
+  height: 150px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  margin: 20px;
+  transition: all .3s ease;
+}
+
+.squirrels_card p,
+.beavers_card p,
+.cubs_card p,
+.scouts_card p,
+.squirrels_card svg,
+.beavers_card svg,
+.cubs_card svg,
+.scouts_card svg {
+  padding: 5px;
+}
+
+
+.squirrels_card:hover,
+.beavers_card:hover,
+.cubs_card:hover,
+.scouts_card:hover {
+  color: white;
+  text-decoration: none;
+  box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.4), 0px 0px 20px 20px rgba(0, 0, 0, 0.19);
+  transform: scale(1.1);
+}
+
+.squirrels_card:hover {
+  background-color: var(--ScoutRed);
+}
+
+.squirrels_card:hover svg g g,
+.beavers_card:hover svg path,
+.cubs_card:hover svg path,
+.scouts_card:hover svg g {
+  fill: white;
+}
+
+.beavers_card:hover {
+  background-color: var(--ScoutBlue);
+}
+
+.cubs_card:hover {
+  background-color: var(--ScoutGreen);
+}
+
+.scouts_card:hover {
+  background-color: var(--ScoutForestGreen);
+}
+
+/* Safeguarding Card */
+
+.safeguarding_card {
+  border-radius: 20px;
+  margin: 10px;
+  padding: 20px;
+  background-color: var(--ScoutYellow);
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.safeguarding_card div {
+  margin: 20px;
+}
+
+.safeguarding_card img {
+  margin-top: 10px;
+}
+
+.safeguarding_card a {
+  color: black;
+  text-decoration: none;
+}
+
+.safeguarding_card a:hover {
+  text-decoration: underline;
+}
+
+.safeguarding_card .purple_card {
+  color: white;
+  font-size: 17px;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px 12%;
+  margin: 5px;
+  border-color: var(--ScoutPurple);
+  border-style: solid;
+  border-width: 1px;
+  background-color: var(--ScoutPurple);
+  transition: all .3s ease;
+}
+
+.safeguarding_card .purple_card:hover {
+  background-color: var(--ScoutYellow);
+  color: var(--ScoutTextGrey);
+}
+
+@media(max-width:500px) {
+  .safeguarding_card {
+    flex-direction: column;
+  }
+
+  .safeguarding_card h2 {
+    text-align: center;
+  }
+
+
+  .safeguarding_card img {
+    margin: unset;
+  }
+
+  .safeguarding_card .purple_card {
+    display: flex;
+    justify-content: center;
+  }
+}
