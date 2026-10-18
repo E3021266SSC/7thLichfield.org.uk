@@ -192,6 +192,10 @@ nav li:hover:not(.logo) a {
   border-color: var(--ScoutForestGreen);
 }
 
+nav li a:hover:not([href]){
+  cursor:pointer;
+}
+
 nav li:hover a svg {
   fill: var(--ScoutBlue);
 }
