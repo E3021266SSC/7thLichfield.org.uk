@@ -24,15 +24,18 @@
 
 .join_us {
   background-color: var(--ScoutBlue);
-  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row-reverse;
 }
 
+.join_us img {
+  width: calc(50% - 20px);
+}
+
 .join_us div {
-  margin: 20px 0;
+  margin-left: 30px;
   justify-content: center;
   align-items: center;
 }
@@ -40,6 +43,7 @@
 .join_us h1 {
   color: var(--ScoutYellow);
   text-align: left;
+
 }
 
 .join_us h3 {
@@ -172,6 +176,28 @@
 
 .scouts_card:hover {
   background-color: var(--ScoutForestGreen);
+}
+
+@media(max-width:420px) {
+
+  .squirrels_card,
+  .beavers_card,
+  .cubs_card,
+  .scouts_card {
+    height: 150px;
+    width: 300px;
+  }
+
+  .squirrels_card p,
+  .beavers_card p,
+  .cubs_card p,
+  .scouts_card p,
+  .squirrels_card svg,
+  .beavers_card svg,
+  .cubs_card svg,
+  .scouts_card svg {
+    transform: scale(1.25);
+  }
 }
 
 /* Safeguarding Card */

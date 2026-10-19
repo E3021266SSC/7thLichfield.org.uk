@@ -141,6 +141,36 @@ a:not([href]):hover {
   text-decoration: none
 }
 
+@media(min-width: 1200px) {
+  body {
+    font-size: 1.25rem;
+  }
+
+  h1 {
+    font-size: 3rem
+  }
+
+  h2 {
+    font-size: 2.5rem
+  }
+
+  h3 {
+    font-size: 2rem
+  }
+
+  h4 {
+    font-size: 1.75rem
+  }
+
+  h5 {
+    font-size: 1.5rem
+  }
+
+  h6 {
+    font-size: 1.25rem
+  }
+}
+
 /* Navigation Bar Styles */
 
 nav {
@@ -314,6 +344,10 @@ footer {
   padding: 20px;
 }
 
+footer img {
+  width: 200px;
+  height: 200px;
+}
 
 .footer_content {
   display: flex;
@@ -340,6 +374,11 @@ footer a:hover {
 }
 
 @media(max-width: 950px) {
+  footer img {
+    width: 150px;
+    height: 150px;
+  }
+
   .footer_content {
     flex-direction: column;
     align-items: center;
