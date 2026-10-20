@@ -1,0 +1,98 @@
+/* Section Cards */
+
+.section_card_holder {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.squirrels_card,
+.beavers_card,
+.cubs_card,
+.scouts_card {
+  background-color: #fff;
+  box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.2), 0px 0px 20px 20px rgba(0, 0, 0, 0.19);
+  height: 150px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  margin: 20px;
+  transition: all .3s ease;
+}
+
+.squirrels_card p,
+.beavers_card p,
+.cubs_card p,
+.scouts_card p,
+.squirrels_card svg,
+.beavers_card svg,
+.cubs_card svg,
+.scouts_card svg {
+  padding: 5px;
+}
+
+
+.squirrels_card:hover,
+.beavers_card:hover,
+.cubs_card:hover,
+.scouts_card:hover {
+  color: white;
+  text-decoration: none;
+  box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.4), 0px 0px 20px 20px rgba(0, 0, 0, 0.19);
+  transform: scale(1.1);
+}
+
+.squirrels_card:hover {
+  background-color: var(--ScoutRed);
+}
+
+.squirrels_card:hover svg g g,
+.beavers_card:hover svg path,
+.cubs_card:hover svg path,
+.scouts_card:hover svg g {
+  fill: white;
+}
+
+.beavers_card:hover {
+  background-color: var(--ScoutBlue);
+}
+
+.cubs_card:hover {
+  background-color: var(--ScoutGreen);
+}
+
+.scouts_card:hover {
+  background-color: var(--ScoutForestGreen);
+}
+
+@media(max-width:420px) {
+
+  .squirrels_card,
+  .beavers_card,
+  .cubs_card,
+  .scouts_card {
+    height: 150px;
+    width: 300px;
+  }
+
+  .squirrels_card p,
+  .beavers_card p,
+  .cubs_card p,
+  .scouts_card p,
+  .squirrels_card svg,
+  .beavers_card svg,
+  .cubs_card svg,
+  .scouts_card svg {
+    transform: scale(1.25);
+  }
+}

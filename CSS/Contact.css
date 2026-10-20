@@ -1,24 +1,73 @@
 /*Conact Details*/
 
-.contact_details{
+.contact_details {
     background-color: var(--ScoutLightGrey);
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 30px;
+    padding: 20px;
 }
 
-.contact_details h2{
+.contact_details h2 {
     padding-top: 10px;
-    padding-bottom: 10px;
 }
 
-.contact_details a{
-    color: var(--ScoutTextGrey);
+.contact_details .details{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+}
+
+.contact_details a {
     text-decoration: none;
 }
 
-.contact_details a:hover{
+.contact_details a:hover {
     text-decoration: underline;
+}
+
+/* Location Card */
+
+.location {
+    background-color: var(--ScoutLightGrey);
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+}
+
+.location div{
+    width: 50%;
+    height: unset;
+    margin: 0 10px;
+    align-content: center;
+}
+
+.location div iframe{
+    width: 100%;
+    height: 100%;
+}
+
+@media(max-width:650px){
+    .location{
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        height: auto;
+    }
+
+    .location div {
+        width: 100%;
+        height: 50%;
+    }
 }
 
 /* Safeguarding Card */
