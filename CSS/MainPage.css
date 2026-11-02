@@ -1,6 +1,6 @@
 /* Top Welcome Image Part */
 
-.imagebackground {
+.imagebackground { /* Setting styles for elements with the class "imagebackground", including background image, repeat, attachment, size, position, and padding. This class is used to create a background image section on the page. */
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
@@ -8,7 +8,7 @@
   padding: 20px;
 }
 
-.imagebackground_text {
+.imagebackground_text { /* Setting styles for elements with the class "imagebackground_text", including text alignment, background color, border radius, margin, padding, color, and maximum width. This class is used to create a text overlay on the background image section. */
   text-align: center;
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 20px;
@@ -22,7 +22,7 @@
 
 /* Join Us Part */
 
-.join_us {
+.join_us { /* Setting styles for elements with the class "join_us", including background color, display, justification, alignment, and flex direction. This class is used to create a section that encourages users to join the organization. */
   background-color: var(--ScoutBlue);
   display: flex;
   justify-content: center;
@@ -30,29 +30,30 @@
   flex-direction: row-reverse;
 }
 
-.join_us img {
+.join_us img { /* Setting styles for image elements within the "join_us" section, including width. This ensures that the image takes up half of the available space minus some margin. */
   width: calc(50% - 20px);
 }
 
-.join_us div {
+.join_us div { /* Setting styles for div elements within the "join_us" section, including width, margin, justification, and alignment. This ensures that the text content takes up half of the available space minus some margin. */
+  width: calc(50% - 20px);
   margin-left: 30px;
   justify-content: center;
   align-items: center;
 }
 
-.join_us h1 {
+.join_us h1 { /* Setting styles for h1 elements within the "join_us" section, including color and text alignment. This ensures that the main heading is styled appropriately. */
   color: var(--ScoutYellow);
   text-align: left;
 
 }
 
-.join_us h3 {
+.join_us h3 { /* Setting styles for h3 elements within the "join_us" section, including color, text alignment, and margin. This ensures that the subheading is styled appropriately. */
   color: white;
   text-align: left;
   margin-bottom: 25px;
 }
 
-.join_us a {
+.join_us a { /* Setting styles for anchor elements within the "join_us" section, including color, font size, text decoration, padding, margin, border color, border style, border width, and transition. This ensures that the call-to-action button is styled appropriately. */
   color: white;
   font-size: 17px;
   text-decoration: none;
@@ -64,12 +65,12 @@
   transition: all .3s ease;
 }
 
-.join_us a:hover {
+.join_us a:hover { /* Setting styles for anchor elements within the "join_us" section on hover, including color and background color. This ensures that the call-to-action button changes appearance when hovered over. */
   color: Var(--ScoutBlue);
   background-color: white;
 }
 
-@media(max-width:800px) {
+@media(max-width:800px) { /* Setting styles for elements on screens with a maximum width of 800px, including changing the flex direction and text alignment of the "join_us" section, adjusting the width of images, and centering text. */
   .join_us {
     flex-direction: column;
     text-align: center;
@@ -94,7 +95,7 @@
 
 }
 
-@media(max-width:500px) {
+@media(max-width:500px) { /* Setting styles for elements on screens with a maximum width of 500px, including changing the flex direction of the "join_us" section and adjusting the display and flex direction of span elements. */
   .join_us span {
     display: flex;
     flex-direction: column;
@@ -103,7 +104,7 @@
 
 /* Section Cards */
 
-.section_card_holder {
+.section_card_holder { /* Setting styles for elements with the class "section_card_holder", including display, justification, alignment, wrapping, padding, maximum width, and margin. This class is used to create a container for the section cards. */
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -117,7 +118,7 @@
 .squirrels_card,
 .beavers_card,
 .cubs_card,
-.scouts_card {
+.scouts_card { /* Setting styles for elements with the classes "squirrels_card", "beavers_card", "cubs_card", and "scouts_card", including border radius, background color, box shadow, height, width, display, flex direction, justification, alignment, text alignment, color, text decoration, margin, and transition. These classes are used to create individual section cards. */
   background-color: #fff;
   box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.2), 0px 0px 20px 20px rgba(0, 0, 0, 0.19);
   height: 150px;
@@ -140,7 +141,7 @@
 .squirrels_card svg,
 .beavers_card svg,
 .cubs_card svg,
-.scouts_card svg {
+.scouts_card svg { /* Setting styles for paragraph and SVG elements within the section cards, including margin and padding. This ensures that the text and icons within the cards are spaced appropriately. */
   padding: 5px;
 }
 
@@ -148,37 +149,37 @@
 .squirrels_card:hover,
 .beavers_card:hover,
 .cubs_card:hover,
-.scouts_card:hover {
+.scouts_card:hover { /* Setting styles for the section cards on hover, including color, text decoration, box shadow, and transform. This ensures that the cards change appearance when hovered over. */
   color: white;
   text-decoration: none;
   box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.4), 0px 0px 20px 20px rgba(0, 0, 0, 0.19);
   transform: scale(1.1);
 }
 
-.squirrels_card:hover {
+.squirrels_card:hover { /* Setting styles for the "squirrels_card" on hover, including background color. This ensures that the card changes appearance when hovered over. */
   background-color: var(--ScoutRed);
 }
 
 .squirrels_card:hover svg g g,
 .beavers_card:hover svg path,
 .cubs_card:hover svg path,
-.scouts_card:hover svg g {
+.scouts_card:hover svg g { /* Setting styles for SVG elements within the section cards on hover, including fill color. This ensures that the icons within the cards change appearance when hovered over. */
   fill: white;
 }
 
-.beavers_card:hover {
+.beavers_card:hover { /* Setting styles for the "beavers_card" on hover, including background color. This ensures that the card changes appearance when hovered over. */
   background-color: var(--ScoutBlue);
 }
 
-.cubs_card:hover {
+.cubs_card:hover { /* Setting styles for the "cubs_card" on hover, including background color. This ensures that the card changes appearance when hovered over. */
   background-color: var(--ScoutGreen);
 }
 
-.scouts_card:hover {
+.scouts_card:hover { /* Setting styles for the "scouts_card" on hover, including background color. This ensures that the card changes appearance when hovered over. */
   background-color: var(--ScoutForestGreen);
 }
 
-@media(max-width:420px) {
+@media(max-width:420px) { /* Setting styles for elements on screens with a maximum width of 420px, including adjusting the height and width of the section cards and scaling the text and icons within the cards. */
 
   .squirrels_card,
   .beavers_card,
@@ -202,7 +203,7 @@
 
 /* Safeguarding Card */
 
-.safeguarding_card {
+.safeguarding_card { /* Setting styles for elements with the class "safeguarding_card", including border radius, margin, padding, background color, maximum width, display, justification, and alignment. This class is used to create a card that provides information about safeguarding. */
   border-radius: 20px;
   margin: 10px;
   padding: 20px;
@@ -215,24 +216,24 @@
   align-items: center;
 }
 
-.safeguarding_card div {
+.safeguarding_card div { /* Setting styles for div elements within the "safeguarding_card", including text alignment and margin. This ensures that the text content within the card is centered and spaced appropriately. */
   margin: 20px;
 }
 
-.safeguarding_card img {
+.safeguarding_card img { /* Setting styles for image elements within the "safeguarding_card", including width, height, and margin. This ensures that the image within the card is sized appropriately and spaced from the text content. */
   margin-top: 10px;
 }
 
-.safeguarding_card a {
+.safeguarding_card a { /* Setting styles for anchor elements within the "safeguarding_card", including color and text decoration. This ensures that the links within the card are styled appropriately. */
   color: black;
   text-decoration: none;
 }
 
-.safeguarding_card a:hover {
+.safeguarding_card a:hover { /* Setting styles for anchor elements within the "safeguarding_card" on hover, including color and text decoration. This ensures that the links within the card change appearance when hovered over. */
   text-decoration: underline;
 }
 
-.safeguarding_card .purple_card {
+.safeguarding_card .purple_card { /* Setting styles for elements with the class "purple_card" within the "safeguarding_card", including color, font size, text decoration, text alignment, padding, margin, border color, border style, border width, background color, and transition. This class is used to create a call-to-action button within the safeguarding card. */
   color: white;
   font-size: 17px;
   text-decoration: none;
@@ -246,12 +247,12 @@
   transition: all .3s ease;
 }
 
-.safeguarding_card .purple_card:hover {
+.safeguarding_card .purple_card:hover { /* Setting styles for elements with the class "purple_card" within the "safeguarding_card" on hover, including background color and text color. This ensures that the call-to-action button changes appearance when hovered over. */
   background-color: var(--ScoutYellow);
   color: var(--ScoutTextGrey);
 }
 
-@media(max-width:500px) {
+@media(max-width:500px) { /* Setting styles for elements on screens with a maximum width of 500px, including changing the flex direction of the "safeguarding_card", centering the text within the card, and adjusting the margin of the image. */
   .safeguarding_card {
     flex-direction: column;
   }

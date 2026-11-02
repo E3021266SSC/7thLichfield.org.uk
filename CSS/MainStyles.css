@@ -1,4 +1,4 @@
-:root {
+:root { /* Color Palette */
   --ScoutPurple: #7413DC;
   --ScoutTeal: #00b8a3;
   --ScoutRed: #ed3f23;
@@ -16,12 +16,12 @@
 
 /* Global Styles */
 
-* {
+* { /* Resetting default styles for all elements to ensure consistency across browsers. */
   margin: 0;
   padding: 0;
 }
 
-body {
+body { /* Setting global styles for the body element, including font family, size, weight, line height, color, text alignment, and background color. */
   margin: 0;
   font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1rem;
@@ -37,37 +37,37 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6 { /* Setting styles for heading elements, including margin, font family, weight, line height, and color. */
   margin-bottom: .5rem;
   font-weight: 900;
   line-height: 1.2
 }
 
-h1 {
+h1 { /* Setting styles for the first-level heading element. */
   font-size: 2.5rem
 }
 
-h2 {
+h2 { /* Setting styles for the second-level heading element. */
   font-size: 2rem
 }
 
-h3 {
+h3 { /* Setting styles for the third-level heading element. */
   font-size: 1.75rem
 }
 
-h4 {
+h4 { /* Setting styles for the fourth-level heading element. */
   font-size: 1.5rem
 }
 
-h5 {
+h5 { /* Setting styles for the fifth-level heading element. */
   font-size: 1.25rem
 }
 
-h6 {
+h6 { /* Setting styles for the sixth-level heading element. */
   font-size: 1rem
 }
 
-hr {
+hr { /* Setting styles for horizontal rule elements, including margin, border, and border color. */
   margin-top: 1rem;
   margin-bottom: 1rem;
   border: 0;
@@ -75,73 +75,73 @@ hr {
 }
 
 small,
-.small {
+.small { /* Setting styles for small text elements, including font size and weight. */
   font-size: 80%;
   font-weight: 400
 }
 
 mark,
-.mark {
+.mark { /* Setting styles for marked text elements, including padding and background color. */
   padding: .2em;
   background-color: #fcf8e3
 }
 
-blockquote {
+blockquote { /* Setting styles for blockquote elements, including margin, padding, font size, border, and color. */
   margin: 0 0 1rem
 }
 
 b,
-strong {
+strong { /* Setting styles for bold text elements, including font weight. */
   font-weight: bolder
 }
 
-small {
+small { /* Setting styles for small text elements, including font size. */
   font-size: 80%
 }
 
 sub,
-sup {
+sup { /* Setting styles for subscript and superscript elements, including position, font size, line height, and vertical alignment. */
   position: relative;
   font-size: 75%;
   line-height: 0;
   vertical-align: baseline
 }
 
-sub {
+sub {/* Setting styles for subscript elements, including bottom position. */
   bottom: -.25em
 }
 
-sup {
+sup { /* Setting styles for superscript elements, including top position. */
   top: -.5em
 }
 
-a {
+a { /* Setting styles for anchor elements, including color, text decoration, and background color. */
   color: #006ddf;
   text-decoration: none;
   background-color: transparent
 }
 
-a:hover {
+a:hover { /* Setting styles for anchor elements on hover, including color and text decoration. */
   color: #004893;
   text-decoration: underline
 }
 
-a:not([href]) {
+a:not([href]) { /* Setting styles for anchor elements without an href attribute, including color and text decoration. */
   color: inherit;
   text-decoration: none
 }
 
-a:not([href]):hover {
+a:not([href]):hover { /* Setting styles for anchor elements without an href attribute on hover, including color and text decoration. */
   color: inherit;
   text-decoration: none
 }
 
-.revert_link {
+.revert_link { /* Setting styles for elements with the class "revert_link", including color and text decoration. */
   color: #404040;
   text-decoration: none
 }
 
-@media(min-width: 1200px) {
+@media(min-width: 1200px) { /* Setting styles for the body element on screens with a minimum width of 1200px, including font size and heading sizes. */
   body {
     font-size: 1.25rem;
   }
@@ -173,14 +173,14 @@ a:not([href]):hover {
 
 /* Navigation Bar Styles */
 
-nav {
+nav { /* Setting styles for the navigation bar, including display, alignment, padding, background color, box shadow, position, and height. */
   background-color: #fff;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
   position: sticky;
   height: 110px;
 }
 
-nav ul {
+nav ul {/* Setting styles for unordered lists within the navigation bar, including width, list style, display, justification, and alignment. */
   width: 100%;
   list-style: none;
   display: flex;
@@ -188,17 +188,17 @@ nav ul {
   align-items: center;
 }
 
-nav li {
+nav li { /* Setting styles for list items within the navigation bar, including height, alignment, and transition effects. */
   height: 80px;
   align-items: center;
   transition: all 0.3s ease;
 }
 
-.navbar li:not(:first-child) a {
+.navbar li:not(:first-child) a { /* Setting styles for anchor elements within list items of the navigation bar, excluding the first child, including height, padding, text decoration, display, alignment, color, and border style. */
   padding: 25px 25px;
 }
 
-nav a {
+nav a { /* Setting styles for anchor elements within the navigation bar, including height, padding, text decoration, display, and alignment. */
   height: 25%;
   padding: 0 25px;
   text-decoration: none;
@@ -209,32 +209,32 @@ nav a {
   border-color: rgba(255, 255, 255, 0);
 }
 
-.logo {
+.logo {/* Setting styles for elements with the class "logo" within the navigation bar, including height, alignment, and top position. */
   height: 100%;
   align-items: center;
   top: 100px;
 }
 
-nav li:hover:not(.logo) a {
+nav li:hover:not(.logo) a {/* Setting styles for anchor elements within list items of the navigation bar on hover, excluding the logo, including background color, text color, text decoration, and border color. */
   background-color: var(--ScoutLightGrey);
   color: var(--ScoutBlue);
   text-decoration: none;
   border-color: var(--ScoutForestGreen);
 }
 
-nav li a:hover:not([href]){
+nav li a:hover:not([href]){ /* Setting styles for anchor elements within list items of the navigation bar on hover, excluding those with an href attribute, including cursor style. */
   cursor:pointer;
 }
 
-nav li:hover a svg {
+nav li:hover a svg { /* Setting styles for SVG elements within anchor elements of list items in the navigation bar on hover, including fill color. */
   fill: var(--ScoutBlue);
 }
 
-nav li:first-child {
+nav li:first-child { /* Setting styles for the first list item within the navigation bar, including margin left and right. */
   margin-right: auto;
 }
 
-.sidebar {
+.sidebar { /* Setting styles for the sidebar, including position, top and right positions, height, width, z-index, background color, backdrop filter, box shadow, display, flex direction, alignment, and justification. */
   position: fixed;
   top: 0;
   right: 0;
@@ -250,21 +250,21 @@ nav li:first-child {
   justify-content: flex-start;
 }
 
-.sidebar li {
+.sidebar li { /* Setting styles for list items within the sidebar, including width and padding. */
   padding: 20px 0;
   width: 100%;
 }
 
-.sidebar a {
+.sidebar a { /* Setting styles for anchor elements within the sidebar, including width and padding. */
   width: 100%;
   padding: 20px 25px;
 }
 
-.menu-button {
+.menu-button { /* Setting styles for the menu button, including display, position, top and right positions, z-index, background color, border, padding, cursor style, and transition effects. */
   display: none;
 }
 
-@media(max-width: 850px) {
+@media(max-width: 850px) { /* Setting styles for elements on screens with a maximum width of 850px, including hiding the navigation bar, displaying the menu button, and adjusting the margin of the first list item in the navigation bar. */
   .hideOnMobile {
     display: none;
   }
@@ -280,17 +280,17 @@ nav li:first-child {
 
 /* Website Wide Classes */
 
-.div_break {
+.div_break { /* Setting styles for elements with the class "div_break", including height, width, and background color. This class is used to create visual breaks or separators between sections of the webpage. */
   background-color: var(--ScoutTeal);
   padding: 15px;
 }
 
-.breadcrumb {
+.breadcrumb { /* Setting styles for elements with the class "breadcrumb", including padding, maximum width, and automatic left and right margins. This class is used to create breadcrumb navigation on the webpage. */
   background-color: var(--ScoutLightGrey);
   padding: 10px 15px;
 }
 
-.breadcrumb ul {
+.breadcrumb ul { /* Setting styles for unordered lists within elements with the class "breadcrumb", including width, list style, display, justification, and alignment. This class is used to create breadcrumb navigation on the webpage. */
   width: 100%;
   list-style: none;
   display: flex;
@@ -298,37 +298,37 @@ nav li:first-child {
   align-items: center;
 }
 
-.breadcrumb li {
+.breadcrumb li { /* Setting styles for list items within the breadcrumb, including alignment and transition effects. */
   align-items: center;
   transition: all 0.3s ease;
 }
 
-.breadcrumb a {
+.breadcrumb a { /* Setting styles for anchor elements within the breadcrumb, including color and text decoration. */
   color: var(--ScoutTextGrey);
   text-decoration: none;
 }
 
-.breadcrumb a:hover {
+.breadcrumb a:hover { /* Setting styles for anchor elements within the breadcrumb on hover, including text decoration. */
   text-decoration: underline;
 }
 
-.breadcrumb svg {
+.breadcrumb svg { /* Setting styles for SVG elements within the breadcrumb, including width, height, and margin. */
   margin-bottom: -6px;
 }
 
-.breadcrumb svg g {
+.breadcrumb svg g { /* Setting styles for group elements within SVGs in the breadcrumb, including fill color. */
   position: absolute;
   z-index: 1;
 }
 
-.main_header {
+.main_header { /* Setting styles for elements with the class "main_header", including padding, maximum width, automatic left and right margins, and text alignment. This class is used to create a main header section on the webpage. */
   padding: 20px;
   background-color: var(--ScoutNavy);
   color: white;
   align-items: center;
 }
 
-.main_header div {
+.main_header div { /* Setting styles for div elements within the main header, including padding, maximum width, automatic left and right margins, and text alignment. */
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
@@ -337,43 +337,43 @@ nav li:first-child {
 
 /* Footer Styles */
 
-footer {
+footer { /* Setting styles for the footer element, including background color, text color, text alignment, and padding. */
   background-color: var(--ScoutPurple);
   color: white;
   text-align: center;
   padding: 20px;
 }
 
-footer img {
+footer img { /* Setting styles for image elements within the footer, including width and height. */
   width: 200px;
   height: 200px;
 }
 
-.footer_content {
+.footer_content { /* Setting styles for elements with the class "footer_content", including display, justification, wrapping, and padding. This class is used to create a content section within the footer that contains multiple sections. */
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 0 100px;
 }
 
-.footer_section {
+.footer_section { /* Setting styles for elements with the class "footer_section", including flex basis and padding. This class is used to create individual sections within the footer content. */
   flex-basis: 25%;
   padding: 20px;
 }
 
-footer a {
+footer a { /* Setting styles for anchor elements within the footer, including color and text decoration. */
   color: white;
 }
 
-footer hr {
-  border-top: 1px solid rgba(255, 255, 255, 1)
+footer hr { /* Setting styles for horizontal rule elements within the footer, including margin and border color. */
+  border-top: 1px solid rgba(255, 255, 255, 1);
 }
 
-footer a:hover {
+footer a:hover { /* Setting styles for anchor elements within the footer on hover, including text decoration. */
   color: white;
 }
 
-@media(max-width: 950px) {
+@media(max-width: 950px) { /* Setting styles for elements on screens with a maximum width of 950px, including adjusting the size of images in the footer, changing the layout of the footer content, and adjusting the text alignment and layout of footer sections. */
   footer img {
     width: 150px;
     height: 150px;

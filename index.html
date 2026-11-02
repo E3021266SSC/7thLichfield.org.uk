@@ -2,23 +2,24 @@
 <html>
 
 <head>
-    <title>7th Lichfield Scouts - Welcome</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7th Lichfield Scouts - Welcome</title> <!-- This sets the title of the webpage that appears in the browser tab. -->
+    <meta charset="UTF-8"> <!-- This specifies the character encoding for the HTML document, ensuring that text is displayed correctly. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- This meta tag makes the webpage responsive by setting the viewport width to the device's width and the initial zoom level to 1.0. -->
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i,900,900i&display=swap">
-    <link rel="stylesheet" href="CSS/MainStyles.css">
-    <link rel="stylesheet" href="CSS/MainPage.css">
+        href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i,900,900i&display=swap"> <!-- This link imports the "Nunito Sans" font from Google Fonts, allowing it to be used in the webpage's styling. -->
+    <link rel="stylesheet" href="CSS/MainStyles.css"> <!-- This link includes an external CSS file named "MainStyles.css" that contains the main styles for the webpage. -->
+    <link rel="stylesheet" href="CSS/MainPage.css"> <!-- This link includes another external CSS file named "MainPage.css" that contains additional styles specific to the main page of the website. -->
 
+    <!-- These two lines set the favicon for the webpage, which is the small icon displayed in the browser tab. The first line sets a dark mode favicon, while the second line sets a light mode favicon. -->
     <link rel="icon" type="image/png" href="Images/7thLogoW.png" media="(prefers-color-scheme: dark)">
     <link rel="icon" type="image/png" href="Images/7thLogoB.png" media="(prefers-color-scheme: light)">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- This meta tag is repeated, but it serves the same purpose as the previous one, ensuring that the webpage is responsive on different devices. -->
 </head>
 
 <body>
     <header>
         <nav>
-            <ul class="sidebar">
+            <ul class="sidebar"> <!-- This list represents the sidebar navigation menu, which is typically hidden and can be toggled on smaller screens. -->
                 <li onclick=hideSidebar()>
                     <a>
                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
@@ -46,7 +47,7 @@
                 </li>
             </ul>
 
-            <ul class="navbar">
+            <ul class="navbar"> <!-- This list represents the main navigation bar that is typically visible on larger screens. -->
                 <li class="logo">
                     <a href="\">
                         <img src="Images/7thLogoB.png" alt="7th Lichfield Scouts Logo" style="height: 100px;">
@@ -81,7 +82,7 @@
     </header>
 
     <main>
-        <div class="imagebackground" style="background-image: url('Images/CubsandYLRunning.jpg');">
+        <div class="imagebackground" style="background-image: url('Images/CubsandYLRunning.jpg');"> <!-- This div creates a background image section with text overlay, welcoming visitors to the 7th Lichfield Scouts website and providing a brief introduction. -->
             <div class="imagebackground_text">
                 <h1 style="opacity: 100%;">Welcome to the 7th Lichfield Scouts Website</h1>
                 <p>We are a group of enthusiastic scouts based in Lichfield, dedicated to providing young people with
@@ -90,9 +91,9 @@
             </div>
         </div>
 
-        <div class="div_break"></div>
+        <div class="div_break"></div> <!-- This div serves as a visual break or separator between sections of the webpage, styled with CSS to create spacing or a line. -->
 
-        <div class="join_us">
+        <div class="join_us"> <!-- This div contains a call-to-action section encouraging visitors to join the scouts or volunteer, with buttons linking to relevant pages. -->
             <img src="Images/triple_image.png">
             <div>
                 <h1>Giving young people a place to belong</h1>
@@ -105,7 +106,7 @@
         </div>
 
         <div>
-            <div>
+            <div> <!-- This div contains a section that introduces the different age groups within the scouts, with cards linking to each section's page. -->
                 <h2 style="text-align: center; padding: 20px;">Explore our age groups</h2>
                 <div class="section_card_holder">
                     <div>
@@ -189,7 +190,7 @@
             </div>
         </div>
 
-        <div class="safeguarding_card">
+        <div class="safeguarding_card"> <!-- This div contains information about safeguarding and safety measures within the scouts. -->
             <div>
                 <h2>Safeguarding and safety at Scouts</h2>
                 <a href="https://www.scouts.org.uk/what-scouts-do/stay-safe/">Wherever we go and whatever we do, we
@@ -241,7 +242,7 @@
 
     </main>
 
-    <footer>
+    <footer> <!-- This footer section contains the logo, useful links, more information, and social media links for the 7th Lichfield Scouts website. -->
         <img src="Images/7th_hq_logo_white.png" alt="7th Lichfield Scouts Logo">
         <hr>
         <div class="footer_content">
@@ -270,7 +271,7 @@
         </p>
     </footer>
 
-    <script src="JS/Menu.js"></script>
+    <script src="JS/Menu.js"></script> <!-- This script is responsible for the navigationfunctionality of the website. -->
 </body>
 
 </html>

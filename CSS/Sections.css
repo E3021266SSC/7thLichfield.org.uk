@@ -1,6 +1,6 @@
 /* Section Cards */
 
-.section_card_holder {
+.section_card_holder { /* This is the styling for the container that holds the section cards */
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -14,7 +14,7 @@
 .squirrels_card,
 .beavers_card,
 .cubs_card,
-.scouts_card {
+.scouts_card { /* This is the styling for the individual section cards */
   background-color: #fff;
   box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.2), 0px 0px 20px 20px rgba(0, 0, 0, 0.19);
   height: 150px;
@@ -37,7 +37,7 @@
 .squirrels_card svg,
 .beavers_card svg,
 .cubs_card svg,
-.scouts_card svg {
+.scouts_card svg { /* This is the styling for the text and SVG icons inside the section cards */
   padding: 5px;
 }
 
@@ -45,37 +45,37 @@
 .squirrels_card:hover,
 .beavers_card:hover,
 .cubs_card:hover,
-.scouts_card:hover {
+.scouts_card:hover { /* This is the styling for the section cards when hovered over */
   color: white;
   text-decoration: none;
   box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.4), 0px 0px 20px 20px rgba(0, 0, 0, 0.19);
   transform: scale(1.1);
 }
 
-.squirrels_card:hover {
+.squirrels_card:hover { /* This is the styling for the squirrels card when hovered over */
   background-color: var(--ScoutRed);
 }
 
 .squirrels_card:hover svg g g,
 .beavers_card:hover svg path,
 .cubs_card:hover svg path,
-.scouts_card:hover svg g {
+.scouts_card:hover svg g { /* This is the styling for the SVG icons inside the section cards when hovered over */
   fill: white;
 }
 
-.beavers_card:hover {
+.beavers_card:hover { /* This is the styling for the beavers card when hovered over */
   background-color: var(--ScoutBlue);
 }
 
-.cubs_card:hover {
+.cubs_card:hover { /* This is the styling for the cubs card when hovered over */
   background-color: var(--ScoutGreen);
 }
 
-.scouts_card:hover {
+.scouts_card:hover { /* This is the styling for the scouts card when hovered over */
   background-color: var(--ScoutForestGreen);
 }
 
-@media(max-width:420px) {
+@media(max-width:420px) { /* This is the styling for the section cards when the screen width is less than or equal to 420px */
 
   .squirrels_card,
   .beavers_card,

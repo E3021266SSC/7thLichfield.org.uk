@@ -1,6 +1,6 @@
 /*Conact Details*/
 
-.contact_details {
+.contact_details { /* This is the styling for the container that holds the contact details section */
     background-color: var(--ScoutLightGrey);
     max-width: 1000px;
     margin-left: auto;
@@ -9,11 +9,11 @@
     padding: 20px;
 }
 
-.contact_details h2 {
+.contact_details h2 { /* This is the styling for the heading of the contact details section */
     padding-top: 10px;
 }
 
-.contact_details .details{
+.contact_details .details{ /* This is the styling for the container that holds the contact details */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -21,17 +21,17 @@
     gap: 20px;
 }
 
-.contact_details a {
+.contact_details a { /* This is the styling for the links in the contact details section */
     text-decoration: none;
 }
 
-.contact_details a:hover {
+.contact_details a:hover { /* This is the styling for the links in the contact details section when hovered over */
     text-decoration: underline;
 }
 
 /* Location Card */
 
-.location {
+.location { /* This is the styling for the container that holds the location section */
     background-color: var(--ScoutLightGrey);
     max-width: 1000px;
     margin-left: auto;
@@ -43,19 +43,19 @@
     height: 300px;
 }
 
-.location div{
+.location div{ /* This is the styling for the container that holds the map and address in the location section */
     width: 50%;
     height: unset;
     margin: 0 10px;
     align-content: center;
 }
 
-.location div iframe{
+.location div iframe{ /* This is the styling for the iframe that holds the Google Maps map in the location section */
     width: 100%;
     height: 100%;
 }
 
-@media(max-width:650px){
+@media(max-width:650px){ /* This is the styling for the location section when the screen width is less than 650px */
     .location{
         flex-direction: column-reverse;
         align-items: center;
@@ -72,7 +72,7 @@
 
 /* Safeguarding Card */
 
-.safeguarding_card {
+.safeguarding_card { /* This is the styling for the container that holds the safeguarding card section */
     border-radius: 20px;
     margin: 10px;
     padding: 20px;
@@ -85,24 +85,24 @@
     align-items: center;
 }
 
-.safeguarding_card div {
+.safeguarding_card div { /* This is the styling for the container that holds the content of the safeguarding card section */
     margin: 20px;
 }
 
-.safeguarding_card img {
+.safeguarding_card img { /* This is the styling for the image in the safeguarding card section */
     margin-top: 10px;
 }
 
-.safeguarding_card a {
+.safeguarding_card a { /* This is the styling for the links in the safeguarding card section */
     color: black;
     text-decoration: none;
 }
 
-.safeguarding_card a:hover {
+.safeguarding_card a:hover { /* This is the styling for the links in the safeguarding card section when hovered over */
     text-decoration: underline;
 }
 
-.safeguarding_card .purple_card {
+.safeguarding_card .purple_card { /* This is the styling for the purple card in the safeguarding card section */
     color: white;
     font-size: 17px;
     text-decoration: none;
@@ -116,12 +116,12 @@
     transition: all .3s ease;
 }
 
-.safeguarding_card .purple_card:hover {
+.safeguarding_card .purple_card:hover { /* This is the styling for the purple card in the safeguarding card section when hovered over */
     background-color: var(--ScoutYellow);
     color: var(--ScoutTextGrey);
 }
 
-@media(max-width:500px) {
+@media(max-width:500px) { /* This is the styling for the safeguarding card section when the screen width is less than 500px */
     .safeguarding_card {
         flex-direction: column;
     }
