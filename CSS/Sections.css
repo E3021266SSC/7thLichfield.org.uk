@@ -82,7 +82,7 @@
   .cubs_card,
   .scouts_card {
     height: 150px;
-    width: 300px;
+    width: 250px;
   }
 
   .squirrels_card p,
@@ -93,6 +93,6 @@
   .beavers_card svg,
   .cubs_card svg,
   .scouts_card svg {
-    transform: scale(1.25);
+    transform: scale(1.5);
   }
 }

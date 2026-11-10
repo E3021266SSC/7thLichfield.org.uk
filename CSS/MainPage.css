@@ -76,6 +76,12 @@
     text-align: center;
   }
 
+  .join_us div {
+    width: 100%;
+    margin-left: unset;
+    padding-bottom: 20px;
+  }
+
   .join_us img {
     width: 80%;
   }
@@ -179,14 +185,14 @@
   background-color: var(--ScoutForestGreen);
 }
 
-@media(max-width:420px) { /* Setting styles for elements on screens with a maximum width of 420px, including adjusting the height and width of the section cards and scaling the text and icons within the cards. */
+@media(max-width:420px) { /* This is the styling for the section cards when the screen width is less than or equal to 420px */
 
   .squirrels_card,
   .beavers_card,
   .cubs_card,
   .scouts_card {
     height: 150px;
-    width: 300px;
+    width: 250px;
   }
 
   .squirrels_card p,
@@ -197,7 +203,7 @@
   .beavers_card svg,
   .cubs_card svg,
   .scouts_card svg {
-    transform: scale(1.25);
+    transform: scale(1.5);
   }
 }
 
