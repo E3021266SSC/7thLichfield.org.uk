@@ -19,6 +19,7 @@
 * { /* Resetting default styles for all elements to ensure consistency across browsers. */
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body { /* Setting global styles for the body element, including font family, size, weight, line height, color, text alignment, and background color. */

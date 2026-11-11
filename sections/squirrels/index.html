@@ -113,11 +113,29 @@
             </div>
         </div>
         <div class="Squirrels_Info">
-            <p>Text for the Squirrels section goes here.</p>
+            <h2>Welcome to Squirrels!</h2>
+            <p>Squirrels is the youngest section of the Scout Movement, welcoming children aged 4 to 6 years old. It's
+                all
+                about having fun, making new friends and discovering the world around us through exciting activities and
+                adventures.</p>
+            <br>
+            <p>At Squirrels, there's always something new to explore! From creative activities and team games to outdoor
+                adventures and learning new skills, every session provides opportunities for children to try something
+                different, build confidence and develop independence.</p>
+            <br>
+            <p>Our programme encourages Squirrels to work together, support one another and celebrate their achievements
+                along the way. There are also plenty of opportunities to earn badges and work towards awards as they
+                progress through their Scouting journey.</p>
+            <br>
+            <h4>Our Dreys</h4>
+            <p>At 7th Lichfield Scout Group, our Squirrels section is made up of two Dreys: Acorn and Chestnut.</p>
+            <br>
+            <p>Both Dreys provide a welcoming and enjoyable environment where young people can make friends, learn new
+                skills and experience everything that Scouting has to offer.</p>
         </div>
         <div class="section_card_holder">
             <div>
-                <a class="squirrels_card">
+                <a class="squirrels_card" href="#acorn-drey" onclick="showSection('acorn-drey'); hideSection('chestnut-drey');">
                     <svg xmlns="http://www.w3.org/2000/svg" width="107" height="24" viewBox="0 0 107 24">
                         <title id="uniqueTitleID">Squirrels</title>
                         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -162,7 +180,7 @@
                 </a>
             </div>
             <div>
-                <a class="squirrels_card">
+                <a class="squirrels_card" href="#chestnut-drey" onclick="showSection('chestnut-drey'); hideSection('acorn-drey');">
                     <svg xmlns="http://www.w3.org/2000/svg" width="107" height="24" viewBox="0 0 107 24">
                         <title id="uniqueTitleID">Squirrels</title>
                         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -209,8 +227,34 @@
         </div>
         <div class="Sections">
             <div id="acorn-drey">
+                <h3>Acorn Drey</h3>
+                <span class="meeting-day">Thursdays</span>
+                <p>
+                    Acorn Drey is one of our two Squirrels Dreys.
+                    It's a place where young people can explore, discover
+                    new interests and enjoy a wide range of activities
+                    alongside their fellow Squirrels.
+                </p>
             </div>
             <div id="chestnut-drey">
+                <h3>Chestnut Drey</h3>
+                <span class="meeting-day">Saturdays</span>
+                <p>
+                    Chestnut Drey is our second Squirrels Drey.
+                    Just like Acorn, it provides opportunities for young
+                    people to have fun, develop their confidence and take
+                    part in exciting activities as part of the 7th Lichfield family.
+                </p>
+            </div>
+            <div id="join">
+                <h3>Joining Squirrels</h3>
+                <p>Interested in joining our Squirrels section?</p>
+                <br>
+                <p>We are always happy to hear from families interested in becoming part of 7th Lichfield Scout Group.
+                </p>
+                <br>
+                <p>For information about joining, contacting our Drey Lead Volunteer or making a waiting list enquiry,
+                    please visit our <a href="\contact">contact page</a>.</p>
             </div>
         </div>
     </main>
@@ -245,6 +289,7 @@
     </footer>
 
     <script src="\JS/Menu.js"></script>
+    <script src="\JS/Sections.js"></script>
 </body>
 
 </html>

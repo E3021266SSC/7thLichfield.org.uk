@@ -1,19 +1,21 @@
-.main_header { /* Setting styles for elements with the class "main_header", including padding, maximum width, automatic left and right margins, and text alignment. This class is used to create a main header section on the webpage. */
+.main_header {
+  /* Setting styles for elements with the class "main_header", including padding, maximum width, automatic left and right margins, and text alignment. This class is used to create a main header section on the webpage. */
   background-color: var(--ScoutRed);
   color: white;
 }
 
 .Squirrels_Info {
-    background-color: var(--ScoutLightGrey);
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding: 20px;
+  background-color: var(--ScoutLightGrey);
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 20px;
 }
 
-.section_card_holder { /* This is the styling for the container that holds the section cards */
+.section_card_holder {
+  /* This is the styling for the container that holds the section cards */
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -24,7 +26,8 @@
   margin-right: auto;
 }
 
-.squirrels_card { /* This is the styling for the individual section cards */
+.squirrels_card {
+  /* This is the styling for the individual section cards */
   background-color: #fff;
   box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.2), 0px 0px 20px 20px rgba(0, 0, 0, 0.19);
   height: 150px;
@@ -42,30 +45,35 @@
 }
 
 .squirrels_card p,
-.squirrels_card svg { /* This is the styling for the text and SVG icons inside the section cards */
+.squirrels_card svg {
+  /* This is the styling for the text and SVG icons inside the section cards */
   padding: 5px;
 }
 
 
-.squirrels_card:hover { /* This is the styling for the section cards when hovered over */
+.squirrels_card:hover {
+  /* This is the styling for the section cards when hovered over */
   text-decoration: none;
   box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.4), 0px 0px 20px 20px rgba(0, 0, 0, 0.19);
   transform: scale(1.1);
 }
 
-.squirrels_card:hover p{
-    color: white;
+.squirrels_card:hover p {
+  color: white;
 }
 
-.squirrels_card:hover { /* This is the styling for the squirrels card when hovered over */
+.squirrels_card:hover {
+  /* This is the styling for the squirrels card when hovered over */
   background-color: var(--ScoutRed);
 }
 
-.squirrels_card:hover svg g g { /* This is the styling for the SVG icons inside the section cards when hovered over */
+.squirrels_card:hover svg g g {
+  /* This is the styling for the SVG icons inside the section cards when hovered over */
   fill: white;
 }
 
-@media(max-width:420px) { /* This is the styling for the section cards when the screen width is less than or equal to 420px */
+@media(max-width:420px) {
+  /* This is the styling for the section cards when the screen width is less than or equal to 420px */
 
   .squirrels_card {
     height: 150px;
@@ -76,4 +84,35 @@
   .squirrels_card svg {
     transform: scale(1.5);
   }
+}
+
+.Sections {
+  background-color: var(--ScoutLightGrey);
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.Sections #acorn-drey,
+.Sections #chestnut-drey {
+  display: none;
+  padding-bottom: 20px;
+}
+
+.Sections div:not(#join) h3{
+  margin-bottom: 0px;
+}
+
+.Sections .meeting-day {
+  display: inline-block;
+  background: var(--ScoutPurple);
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
