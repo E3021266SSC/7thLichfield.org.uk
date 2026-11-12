@@ -8,7 +8,7 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i,900,900i&display=swap">
     <link rel="stylesheet" href="\CSS/MainStyles.css">
-    <link rel="stylesheet" href="\CSS/Squirrels.css">
+    <link rel="stylesheet" href="\CSS/Sections.css">
 
     <link rel="icon" type="image/png" href="\Images/7thLogoW.png" media="(prefers-color-scheme: dark)">
     <link rel="icon" type="image/png" href="\Images/7thLogoB.png" media="(prefers-color-scheme: light)">
@@ -107,35 +107,40 @@
     </header>
 
     <main>
-        <div class="main_header">
+        <div class="main_header" id="Squirrels_Header">
             <div>
                 <h1>Squirrels</h1>
             </div>
         </div>
-        <div class="Squirrels_Info">
+        <div class="Section_Info">
             <h2>Welcome to Squirrels!</h2>
             <p>Squirrels is the youngest section of the Scout Movement, welcoming children aged 4 to 6 years old. It's
                 all
                 about having fun, making new friends and discovering the world around us through exciting activities and
-                adventures.</p>
-            <br>
-            <p>At Squirrels, there's always something new to explore! From creative activities and team games to outdoor
+                adventures.
+                <br><br>
+                At Squirrels, there's always something new to explore! From creative activities and team games to
+                outdoor
                 adventures and learning new skills, every session provides opportunities for children to try something
-                different, build confidence and develop independence.</p>
-            <br>
-            <p>Our programme encourages Squirrels to work together, support one another and celebrate their achievements
+                different, build confidence and develop independence.
+                <br><br>
+                Our programme encourages Squirrels to work together, support one another and celebrate their
+                achievements
                 along the way. There are also plenty of opportunities to earn badges and work towards awards as they
-                progress through their Scouting journey.</p>
+                progress through their Scouting journey.
+            </p>
             <br>
             <h4>Our Dreys</h4>
-            <p>At 7th Lichfield Scout Group, our Squirrels section is made up of two Dreys: Acorn and Chestnut.</p>
-            <br>
-            <p>Both Dreys provide a welcoming and enjoyable environment where young people can make friends, learn new
-                skills and experience everything that Scouting has to offer.</p>
+            <p>At 7th Lichfield Scout Group, our Squirrels section is made up of two Dreys: Acorn and Chestnut.
+                <br><br>
+                Both Dreys provide a welcoming and enjoyable environment where young people can make friends, learn new
+                skills and experience everything that Scouting has to offer.
+            </p>
         </div>
         <div class="section_card_holder">
             <div>
-                <a class="squirrels_card" href="#acorn-drey" onclick="showSection('acorn-drey'); hideSection('chestnut-drey');">
+                <a class="squirrels_card" href="#acorn"
+                    onclick="showSection('acorn'); hideSection('chestnut');">
                     <svg xmlns="http://www.w3.org/2000/svg" width="107" height="24" viewBox="0 0 107 24">
                         <title id="uniqueTitleID">Squirrels</title>
                         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -180,7 +185,8 @@
                 </a>
             </div>
             <div>
-                <a class="squirrels_card" href="#chestnut-drey" onclick="showSection('chestnut-drey'); hideSection('acorn-drey');">
+                <a class="squirrels_card" href="#chestnut"
+                    onclick="showSection('chestnut'); hideSection('acorn');">
                     <svg xmlns="http://www.w3.org/2000/svg" width="107" height="24" viewBox="0 0 107 24">
                         <title id="uniqueTitleID">Squirrels</title>
                         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -225,10 +231,10 @@
                 </a>
             </div>
         </div>
-        <div class="Sections">
-            <div id="acorn-drey">
+        <div class="Sections" id="Squirrels_Sections">
+            <div id="acorn">
                 <h3>Acorn Drey</h3>
-                <span class="meeting-day">Thursdays</span>
+                <span class="meeting-day">Thursdays @ 5:00-6:00pm</span>
                 <p>
                     Acorn Drey is one of our two Squirrels Dreys.
                     It's a place where young people can explore, discover
@@ -236,9 +242,9 @@
                     alongside their fellow Squirrels.
                 </p>
             </div>
-            <div id="chestnut-drey">
+            <div id="chestnut">
                 <h3>Chestnut Drey</h3>
-                <span class="meeting-day">Saturdays</span>
+                <span class="meeting-day">Saturdays @ 9:00-10:00am</span>
                 <p>
                     Chestnut Drey is our second Squirrels Drey.
                     Just like Acorn, it provides opportunities for young
@@ -247,14 +253,14 @@
                 </p>
             </div>
             <div id="join">
-                <h3>Joining Squirrels</h3>
-                <p>Interested in joining our Squirrels section?</p>
-                <br>
-                <p>We are always happy to hear from families interested in becoming part of 7th Lichfield Scout Group.
+                <h3>Joining Squirrels?</h3>
+                <p>Interested in joining our Squirrels section?
+                    <br><br>
+                    We are always happy to hear from families interested in becoming part of 7th Lichfield Scout Group.
+                    <br><br>
+                    For information about joining, contacting our Drey Lead Volunteer or making a waiting list enquiry,
+                    please visit our <a href="\contact">contact page</a>.
                 </p>
-                <br>
-                <p>For information about joining, contacting our Drey Lead Volunteer or making a waiting list enquiry,
-                    please visit our <a href="\contact">contact page</a>.</p>
             </div>
         </div>
     </main>
