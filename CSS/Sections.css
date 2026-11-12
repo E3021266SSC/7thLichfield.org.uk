@@ -138,28 +138,24 @@
   padding: 20px;
 }
 
-.Sections div:not(#join) {
+.Sections div:not(#join, #break) {
   display: none;
 }
 
-.Sections#Squirrels_Sections div:not(#join) {
-  background-color: var(--ScoutRed);
-  color: white;
+.Sections#Squirrels_Sections div:not(#join) h3{
+  color: var(--ScoutRed);
 }
 
-.Sections#Beavers_Sections div:not(#join) {
-  background-color: var(--ScoutBlue);
-  color: white;
+.Sections#Beavers_Sections div:not(#join) h3{
+  color: var(--ScoutBlue);
 }
 
-.Sections#Cubs_Sections div:not(#join) {
-  background-color: var(--ScoutGreen);
-  color: white;
+.Sections#Cubs_Sections div:not(#join) h3{
+  color: var(--ScoutGreen);
 }
 
-.Sections#Scouts_Sections div:not(#join) {
-  background-color: var(--ScoutForestGreen);
-  color: white;
+.Sections#Scouts_Sections div:not(#join) h3{
+  color: var(--ScoutForestGreen);
 }
 
 .Sections div:not(#join) h3{
@@ -176,4 +172,8 @@
   font-weight: 600;
   margin-top: 5px;
   margin-bottom: 10px;
+}
+
+.Sections .div_break#break {
+  background-color: white;
 }

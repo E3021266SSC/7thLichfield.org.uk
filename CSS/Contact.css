@@ -166,3 +166,12 @@
         justify-content: center;
     }
 }
+
+:target {
+    width: 100%;
+    transform: scale(1.5);
+}
+
+:target h4{
+    color: var(--ScoutPurple);
+}
