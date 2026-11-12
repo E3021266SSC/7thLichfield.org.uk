@@ -1,9 +1,9 @@
 function showSection(ShowSectionId) { // Function to show the sidebar and disable scrolling on the body.
     const Section = document.querySelector(`#${ShowSectionId}`);
-    if (Section.style.display === 'block') {
+    if (Section.style.display == 'block') {
         hideSection(ShowSectionId);
     }
-    else{
+    else {
         Section.style.display = 'block';
     }
     

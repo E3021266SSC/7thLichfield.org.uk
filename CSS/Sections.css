@@ -147,6 +147,21 @@
   color: white;
 }
 
+.Sections#Beavers_Sections div:not(#join) {
+  background-color: var(--ScoutBlue);
+  color: white;
+}
+
+.Sections#Cubs_Sections div:not(#join) {
+  background-color: var(--ScoutGreen);
+  color: white;
+}
+
+.Sections#Scouts_Sections div:not(#join) {
+  background-color: var(--ScoutForestGreen);
+  color: white;
+}
+
 .Sections div:not(#join) h3{
   margin-bottom: 0px;
 }
