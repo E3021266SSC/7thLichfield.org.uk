@@ -28,6 +28,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: row-reverse;
+  padding: 20px;
 }
 
 .join_us img { /* Setting styles for image elements within the "join_us" section, including width. This ensures that the image takes up half of the available space minus some margin. */
@@ -83,7 +84,7 @@
   }
 
   .join_us img {
-    width: 80%;
+    width: 100%;
   }
 
   .join_us h1 {
