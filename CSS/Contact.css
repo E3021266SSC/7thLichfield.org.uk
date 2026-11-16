@@ -25,13 +25,6 @@
     width: calc(50% - 10px);
 }
 
-@media(max-width:695px){ /* This is the styling for the contact details section when the screen width is less than 695px */
-    .contact_details .details div{
-        width: 100%;
-        text-align: center;
-    }
-}
-
 .contact_details .form{ /* This is the styling for the contact form button */
     display: flex;
     justify-content: center;
@@ -54,6 +47,22 @@
     background-color: var(--ScoutLightGrey);
     color: var(--ScoutNavy);
     border: 1px solid var(--ScoutNavy);
+}
+
+:target{
+    width: 100% !important;
+    text-align: center;
+}
+
+:target h4{
+    color: var(--ScoutPurple);
+}
+
+@media(max-width:695px){ /* This is the styling for the contact details section when the screen width is less than 695px */
+    .contact_details .details div{
+        width: 100%;
+        text-align: center;
+    }
 }
 
 /* Location Card */
@@ -165,13 +174,4 @@
         display: flex;
         justify-content: center;
     }
-}
-
-:target {
-    width: 100%;
-    transform: scale(1.5);
-}
-
-:target h4{
-    color: var(--ScoutPurple);
 }
