@@ -42,11 +42,11 @@
 
 /* Equal 50/50 split columns accounting for margins */
 .join_us img {
-  width: calc(50% - 20px);
+  width: calc(40% - 20px);
 }
 
 .join_us div {
-  width: calc(50% - 20px);
+  width: calc(40% - 20px);
   margin-left: 30px;
   justify-content: center;
   align-items: center;
@@ -68,7 +68,7 @@
   color: white;
   font-size: 17px;
   text-decoration: none;
-  padding: 5px 12%;
+  padding: 10px calc(20% - 20px);
   margin: 5px;
   border-color: white;
   border-style: solid;
@@ -203,7 +203,7 @@
   background-color: var(--ScoutForestGreen);
 }
 
-/* Small Mobile Breakpoint: Widens cards into rectangular banners and enlarges inner content */
+/* Small Mobile Breakpoint: Widens cards into rectangular banners and enlarges inner text/icons */
 @media(max-width:420px) {
 
   .squirrels_card,
@@ -214,15 +214,31 @@
     width: 250px;
   }
 
+  .squirrels_card svg {
+    width: 160.5px;
+    height: 36px;
+  }
+
+  .beavers_card svg {
+    width: 135px;
+    height: 37.5px;
+  }
+
+  .cubs_card svg {
+    width: 85.5px;
+    height: 34.5px;
+  }
+
+  .scouts_card svg {
+    width: 139.5px;
+    height: 27px;
+  }
+
   .squirrels_card p,
   .beavers_card p,
   .cubs_card p,
-  .scouts_card p,
-  .squirrels_card svg,
-  .beavers_card svg,
-  .cubs_card svg,
-  .scouts_card svg {
-    transform: scale(1.5);
+  .scouts_card p {
+    font-size: 24px;
   }
 }
 

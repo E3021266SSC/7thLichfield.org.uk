@@ -198,7 +198,7 @@ a:not([href]):hover {
 
 nav {
   background-color: #fff;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
   position: sticky;
   height: 110px;
 }
@@ -325,7 +325,7 @@ nav li:first-child {
 /* Breadcrumb trail bar indicating current page hierarchy */
 .breadcrumb {
   background-color: var(--ScoutLightGrey);
-  padding: 10px 15px;
+  padding: 15px;
 }
 
 .breadcrumb ul {

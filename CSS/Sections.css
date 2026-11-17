@@ -23,8 +23,8 @@
 .scouts_card {
   background-color: #fff;
   box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.2), 0px 0px 20px 20px rgba(0, 0, 0, 0.19);
-  height: 150px;
-  width: 150px;
+  height: 200px;
+  width: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -95,15 +95,31 @@
     width: 250px;
   }
 
+  .squirrels_card svg {
+    width: 160.5px;
+    height: 36px;
+  }
+
+  .beavers_card svg {
+    width: 135px;
+    height: 37.5px;
+  }
+
+  .cubs_card svg {
+    width: 85.5px;
+    height: 34.5px;
+  }
+
+  .scouts_card svg {
+    width: 139.5px;
+    height: 27px;
+  }
+
   .squirrels_card p,
   .beavers_card p,
   .cubs_card p,
-  .scouts_card p,
-  .squirrels_card svg,
-  .beavers_card svg,
-  .cubs_card svg,
-  .scouts_card svg {
-    transform: scale(1.5);
+  .scouts_card p {
+    font-size: 24px;
   }
 }
 
