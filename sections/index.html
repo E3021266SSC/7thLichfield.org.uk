@@ -2,33 +2,44 @@
 <html>
 
 <head>
-    <title>7th Lichfield Scouts - Sections</title> <!-- This is the title of the page that appears in the browser tab -->
-    <meta charset="UTF-8"> <!-- This is the character encoding for the page -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- This is the viewport settings for the page -->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i,900,900i&display=swap"> <!-- This is the link to the Google Fonts stylesheet for the Nunito Sans font -->
-    <link rel="stylesheet" href="\CSS/MainStyles.css"> <!-- This is the link to the main stylesheet for the website -->
-    <link rel="stylesheet" href="\CSS/Sections.css"> <!-- This is the link to the stylesheet for the sections page -->
+    <!-- Document Title -->
+    <title>7th Lichfield Scouts - Sections</title>
 
-    <!-- This is the link to the favicon for the website. The favicon is a small icon that appears in the browser tab next to the title of the page. The favicon is different for light and dark mode. -->
+    <!-- Meta Tags for Character Encoding and Responsive Viewport Scaling -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts (Nunito Sans) & Global/Section-Specific Stylesheets -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i,900,900i&display=swap">
+    <link rel="stylesheet" href="\CSS/MainStyles.css">
+    <link rel="stylesheet" href="\CSS/Sections.css">
+
+    <!-- Adaptive Favicons matching OS Dark/Light Theme Preferences -->
     <link rel="icon" type="image/png" href="\Images/7thLogoW.png" media="(prefers-color-scheme: dark)">
     <link rel="icon" type="image/png" href="\Images/7thLogoB.png" media="(prefers-color-scheme: light)">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- This is the viewport settings for the page -->
 </head>
 
 <body>
+    <!-- =====================================================================
+         SITE HEADER & NAVIGATION
+         ===================================================================== -->
     <header>
         <nav>
-            <ul class="sidebar"> <!-- This is the sidebar navigation menu that appears when the menu button is clicked on mobile devices -->
+            <!-- Slide-Out Mobile Navigation Drawer (Controlled by JS) -->
+            <ul class="sidebar">
+                <!-- Close Button triggering hideSidebar() -->
                 <li onclick=hideSidebar()>
                     <a href="#">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
                             fill="#1f1f1f">
+                            <title id="uniqueTitleID">Exit Navigation Menu</title>
                             <path
                                 d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
                         </svg>
                     </a>
                 </li>
+                <!-- Mobile Drawer Navigation Links -->
                 <li>
                     <a href="\sections">Sections</a>
                 </li>
@@ -46,12 +57,15 @@
                 </li>
             </ul>
 
-            <ul class="navbar"> <!-- This is the main navigation menu that appears on desktop devices -->
+            <!-- Primary Desktop Navigation Bar -->
+            <ul class="navbar">
+                <!-- Group Logo / Home Link -->
                 <li class="logo">
                     <a href="\">
                         <img src="\Images/7thLogoB.png" alt="7th Lichfield Scouts Logo" style="height: 100px;">
                     </a>
                 </li>
+                <!-- Desktop Nav Links (Hidden on Mobile Viewports) -->
                 <li class="hideOnMobile">
                     <a href="\sections">Sections</a>
                 </li>
@@ -67,10 +81,12 @@
                 <li class="hideOnMobile">
                     <a href="https://www.onlinescoutmanager.co.uk/login.php">OSM</a>
                 </li>
+                <!-- Mobile Hamburger Toggle triggering showSidebar() -->
                 <li class="menu-button" onclick=showSidebar()>
                     <a href="#">
                         <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"
                             fill="#1f1f1f">
+                            <title id="uniqueTitleID">Navigation Menu</title>
                             <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
                         </svg>
                     </a>
@@ -78,7 +94,8 @@
             </ul>
         </nav>
 
-        <div class="breadcrumb"> <!-- This is the breadcrumb navigation that appears below the main navigation menu. It shows the user where they are on the website and allows them to navigate back to previous pages. -->
+        <!-- Breadcrumb Trail showing Current Hierarchy (Home > Sections) -->
+        <div class="breadcrumb">
             <ul>
                 <li>
                     <a href="\">Home</a>
@@ -97,16 +114,25 @@
         </div>
     </header>
 
+    <!-- =====================================================================
+         MAIN CONTENT AREA
+         ===================================================================== -->
     <main>
-        <div class="main_header"> <!-- This is the main header for the sections page. It contains the title of the page. -->
+        <!-- Page Banner Header -->
+        <div class="main_header">
             <div>
                 <h1>Our Scout Sections</h1>
             </div>
         </div>
+
+        <!-- Sections Overview Container -->
         <div>
-            <div> <!-- This is the main content area for the sections page. It contains the section cards that link to the individual section pages. -->
+            <div>
                 <h2 style="text-align: center; padding: 20px;">Explore our age groups</h2>
+
+                <!-- Grid Container holding individual section age cards -->
                 <div class="section_card_holder">
+                    <!-- Squirrels Card (4-6 Years) -->
                     <div>
                         <a href="\sections/squirrels" class="squirrels_card">
                             <svg xmlns="http://www.w3.org/2000/svg" width="107" height="24" viewBox="0 0 107 24">
@@ -152,6 +178,8 @@
                             <p><b>4-6 Years</b></p>
                         </a>
                     </div>
+
+                    <!-- Beavers Card (6-8 Years) -->
                     <div>
                         <a href="\sections/beavers" class="beavers_card">
                             <svg xmlns="http://www.w3.org/2000/svg" width="90" height="25" viewBox="0 0 90 25">
@@ -162,6 +190,8 @@
                             <p><b>6-8 Years</b></p>
                         </a>
                     </div>
+
+                    <!-- Cubs Card (8-10½ Years) -->
                     <div>
                         <a href="\sections/cubs" class="cubs_card">
                             <svg xmlns="http://www.w3.org/2000/svg" width="57" height="23" viewBox="0 0 57 23">
@@ -172,6 +202,8 @@
                             <p><b>8-10½ years</b></p>
                         </a>
                     </div>
+
+                    <!-- Scouts Card (10½-14 Years) -->
                     <div>
                         <a href="\sections/scouts" class="scouts_card">
                             <svg xmlns="http://www.w3.org/2000/svg" width="93" height="18" viewBox="0 0 93 18">
@@ -189,10 +221,16 @@
         </div>
     </main>
 
-    <footer> <!-- Footer Section -->
+    <!-- =====================================================================
+         SITE FOOTER
+         ===================================================================== -->
+    <footer>
+        <!-- White HQ Logo -->
         <img src="\Images/7th_hq_logo_white.png" alt="7th Lichfield Scouts Logo">
         <hr>
+        <!-- Footer Multi-Column Links -->
         <div class="footer_content">
+            <!-- National Scout Association Links -->
             <div class="footer_section">
                 <h2>Useful Links</h2>
                 <a href="https://www.scouts.org.uk/">The Scout Association</a><br>
@@ -200,6 +238,7 @@
                 <a href="https://www.scouts.org.uk/activities/">Scouting Activities</a><br>
                 <a href="https://www.scouts.org.uk/join/">Join Scouts</a><br>
             </div>
+            <!-- Internal Quick Navigation Links -->
             <div class="footer_section">
                 <h2>More Info</h2>
                 <a href="\sections">Sections</a><br>
@@ -208,17 +247,20 @@
                 <a href="\contact">Contact Us</a><br>
                 <a href="https://www.onlinescoutmanager.co.uk/login.php">OSM</a><br>
             </div>
+            <!-- Social Media Section Placeholder -->
             <div class="footer_section">
                 <h2>Follow Us</h2>
             </div>
         </div>
         <hr>
-        <p><small>7th Lichfield Scout Group is a registered charity.<br>Our charity number is: 1021870.<br>&copy; 2026
+        <!-- Charity Registration Number & Copyright Notice -->
+        <p><small>7th Lichfield Scout Group is a registered charity.<br>Our charity number is: 1021870.<br>© 2026
                 7th Lichfield Scouts. All rights reserved.</small>
         </p>
     </footer>
 
-    <script src="\JS/Menu.js"></script> <!-- JavaScript file for the menu functionality -->
+    <!-- Script for Mobile Sidebar Toggle Functionality -->
+    <script src="\JS/Menu.js"></script>
 </body>
 
 </html>

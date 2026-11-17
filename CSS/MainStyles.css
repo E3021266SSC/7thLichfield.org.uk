@@ -1,4 +1,9 @@
-:root { /* Color Palette */
+/* ==========================================================================
+   BRAND COLOR PALETTE & CSS VARIABLES
+   Official Scout Association brand colors and neutral UI tones.
+   ========================================================================== */
+
+:root {
   --ScoutPurple: #7413DC;
   --ScoutTeal: #00b8a3;
   --ScoutRed: #ed3f23;
@@ -14,15 +19,20 @@
   --ScoutTextGrey: #404040;
 }
 
-/* Global Styles */
 
-* { /* Resetting default styles for all elements to ensure consistency across browsers. */
+/* ==========================================================================
+   GLOBAL RESET & BASE TYPOGRAPHY
+   Normalizes browser defaults and establishes the base font scale and hierarchy.
+   ========================================================================== */
+
+/* Resets browser default spacing and enables smooth anchor scrolling */
+* {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
 }
 
-body { /* Setting global styles for the body element, including font family, size, weight, line height, color, text alignment, and background color. */
+body {
   margin: 0;
   font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1rem;
@@ -33,42 +43,44 @@ body { /* Setting global styles for the body element, including font family, siz
   background-color: #fff
 }
 
+/* Shared heading typography using extra-bold Nunito Sans */
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 { /* Setting styles for heading elements, including margin, font family, weight, line height, and color. */
+h6 {
   margin-bottom: .5rem;
   font-weight: 900;
   line-height: 1.2
 }
 
-h1 { /* Setting styles for the first-level heading element. */
+h1 {
   font-size: 2.5rem
 }
 
-h2 { /* Setting styles for the second-level heading element. */
+h2 {
   font-size: 2rem
 }
 
-h3 { /* Setting styles for the third-level heading element. */
+h3 {
   font-size: 1.75rem
 }
 
-h4 { /* Setting styles for the fourth-level heading element. */
+h4 {
   font-size: 1.5rem
 }
 
-h5 { /* Setting styles for the fifth-level heading element. */
+h5 {
   font-size: 1.25rem
 }
 
-h6 { /* Setting styles for the sixth-level heading element. */
+h6 {
   font-size: 1rem
 }
 
-hr { /* Setting styles for horizontal rule elements, including margin, border, and border color. */
+/* Subtle horizontal divider rule */
+hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
   border: 0;
@@ -76,73 +88,79 @@ hr { /* Setting styles for horizontal rule elements, including margin, border, a
 }
 
 small,
-.small { /* Setting styles for small text elements, including font size and weight. */
+.small {
   font-size: 80%;
   font-weight: 400
 }
 
+/* Highlighted text marker */
 mark,
-.mark { /* Setting styles for marked text elements, including padding and background color. */
+.mark {
   padding: .2em;
   background-color: #fcf8e3
 }
 
-blockquote { /* Setting styles for blockquote elements, including margin, padding, font size, border, and color. */
+blockquote {
   margin: 0 0 1rem
 }
 
 b,
-strong { /* Setting styles for bold text elements, including font weight. */
+strong {
   font-weight: bolder
 }
 
-small { /* Setting styles for small text elements, including font size. */
+small {
   font-size: 80%
 }
 
+/* Subscript & superscript positioning without disrupting line height */
 sub,
-sup { /* Setting styles for subscript and superscript elements, including position, font size, line height, and vertical alignment. */
+sup {
   position: relative;
   font-size: 75%;
   line-height: 0;
   vertical-align: baseline
 }
 
-sub {/* Setting styles for subscript elements, including bottom position. */
+sub {
   bottom: -.25em
 }
 
-sup { /* Setting styles for superscript elements, including top position. */
+sup {
   top: -.5em
 }
 
-a { /* Setting styles for anchor elements, including color, text decoration, and background color. */
+/* Default inline link styling */
+a {
   color: #006ddf;
   text-decoration: none;
   background-color: transparent
 }
 
-a:hover { /* Setting styles for anchor elements on hover, including color and text decoration. */
+a:hover {
   color: #004893;
   text-decoration: underline
 }
 
-a:not([href]) { /* Setting styles for anchor elements without an href attribute, including color and text decoration. */
+/* Prevents placeholder/JS-triggered anchors without an href from looking like standard links */
+a:not([href]) {
   color: inherit;
   text-decoration: none
 }
 
-a:not([href]):hover { /* Setting styles for anchor elements without an href attribute on hover, including color and text decoration. */
+a:not([href]):hover {
   color: inherit;
   text-decoration: none
 }
 
-.revert_link { /* Setting styles for elements with the class "revert_link", including color and text decoration. */
+/* Utility class to strip standard blue link styling and inherit surrounding body text color */
+.revert_link {
   color: #404040;
   text-decoration: none
 }
 
-@media(min-width: 1200px) { /* Setting styles for the body element on screens with a minimum width of 1200px, including font size and heading sizes. */
+/* Large Desktop Breakpoint: Scales up base body text and heading hierarchy for wide viewports */
+@media(min-width: 1200px) {
   body {
     font-size: 1.25rem;
   }
@@ -172,16 +190,20 @@ a:not([href]):hover { /* Setting styles for anchor elements without an href attr
   }
 }
 
-/* Navigation Bar Styles */
 
-nav { /* Setting styles for the navigation bar, including display, alignment, padding, background color, box shadow, position, and height. */
+/* ==========================================================================
+   PRIMARY NAVIGATION BAR & MOBILE SIDEBAR
+   Sticky top header for desktop and slide-over frosted glass drawer for mobile.
+   ========================================================================== */
+
+nav {
   background-color: #fff;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
   position: sticky;
   height: 110px;
 }
 
-nav ul {/* Setting styles for unordered lists within the navigation bar, including width, list style, display, justification, and alignment. */
+nav ul {
   width: 100%;
   list-style: none;
   display: flex;
@@ -189,17 +211,19 @@ nav ul {/* Setting styles for unordered lists within the navigation bar, includi
   align-items: center;
 }
 
-nav li { /* Setting styles for list items within the navigation bar, including height, alignment, and transition effects. */
+nav li {
   height: 80px;
   align-items: center;
   transition: all 0.3s ease;
 }
 
-.navbar li:not(:first-child) a { /* Setting styles for anchor elements within list items of the navigation bar, excluding the first child, including height, padding, text decoration, display, alignment, color, and border style. */
+/* Applies vertical padding to desktop nav links while leaving the brand logo untouched */
+.navbar li:not(:first-child) a {
   padding: 25px 25px;
 }
 
-nav a { /* Setting styles for anchor elements within the navigation bar, including height, padding, text decoration, display, and alignment. */
+/* Base nav link layout with a transparent dotted border ready for hover state transitions */
+nav a {
   height: 25%;
   padding: 0 25px;
   text-decoration: none;
@@ -210,32 +234,37 @@ nav a { /* Setting styles for anchor elements within the navigation bar, includi
   border-color: rgba(255, 255, 255, 0);
 }
 
-.logo {/* Setting styles for elements with the class "logo" within the navigation bar, including height, alignment, and top position. */
+.logo {
   height: 100%;
   align-items: center;
   top: 100px;
 }
 
-nav li:hover:not(.logo) a {/* Setting styles for anchor elements within list items of the navigation bar on hover, excluding the logo, including background color, text color, text decoration, and border color. */
+/* Nav link hover state: light grey fill, Scout blue text, and forest green dotted border */
+nav li:hover:not(.logo) a {
   background-color: var(--ScoutLightGrey);
   color: var(--ScoutBlue);
   text-decoration: none;
   border-color: var(--ScoutForestGreen);
 }
 
-nav li a:hover:not([href]){ /* Setting styles for anchor elements within list items of the navigation bar on hover, excluding those with an href attribute, including cursor style. */
-  cursor:pointer;
+/* Ensures interactive menu buttons without an href still show a pointer cursor */
+nav li a:hover:not([href]) {
+  cursor: pointer;
 }
 
-nav li:hover a svg { /* Setting styles for SVG elements within anchor elements of list items in the navigation bar on hover, including fill color. */
+/* Tints hamburger/close SVG icons to match link hover color */
+nav li:hover a svg {
   fill: var(--ScoutBlue);
 }
 
-nav li:first-child { /* Setting styles for the first list item within the navigation bar, including margin left and right. */
+/* Pushes the brand logo to the far left while keeping navigation links right-aligned */
+nav li:first-child {
   margin-right: auto;
 }
 
-.sidebar { /* Setting styles for the sidebar, including position, top and right positions, height, width, z-index, background color, backdrop filter, box shadow, display, flex direction, alignment, and justification. */
+/* Slide-out mobile drawer with frosted glass (backdrop-filter) effect */
+.sidebar {
   position: fixed;
   top: 0;
   right: 0;
@@ -251,21 +280,23 @@ nav li:first-child { /* Setting styles for the first list item within the naviga
   justify-content: flex-start;
 }
 
-.sidebar li { /* Setting styles for list items within the sidebar, including width and padding. */
+.sidebar li {
   padding: 20px 0;
   width: 100%;
 }
 
-.sidebar a { /* Setting styles for anchor elements within the sidebar, including width and padding. */
+.sidebar a {
   width: 100%;
   padding: 20px 25px;
 }
 
-.menu-button { /* Setting styles for the menu button, including display, position, top and right positions, z-index, background color, border, padding, cursor style, and transition effects. */
+/* Hamburger menu toggle hidden on desktop screens */
+.menu-button {
   display: none;
 }
 
-@media(max-width: 850px) { /* Setting styles for elements on screens with a maximum width of 850px, including hiding the navigation bar, displaying the menu button, and adjusting the margin of the first list item in the navigation bar. */
+/* Tablet/Mobile Breakpoint: Hides desktop links, reveals hamburger toggle, and centers the logo */
+@media(max-width: 850px) {
   .hideOnMobile {
     display: none;
   }
@@ -279,19 +310,25 @@ nav li:first-child { /* Setting styles for the first list item within the naviga
   }
 }
 
-/* Website Wide Classes */
 
-.div_break { /* Setting styles for elements with the class "div_break", including height, width, and background color. This class is used to create visual breaks or separators between sections of the webpage. */
+/* ==========================================================================
+   SHARED LAYOUT & SITE-WIDE COMPONENTS
+   Reusable structural utilities including section dividers, breadcrumbs, and page headers.
+   ========================================================================== */
+
+/* Full-width teal horizontal band used to visually separate page sections */
+.div_break {
   background-color: var(--ScoutTeal);
   padding: 15px;
 }
 
-.breadcrumb { /* Setting styles for elements with the class "breadcrumb", including padding, maximum width, and automatic left and right margins. This class is used to create breadcrumb navigation on the webpage. */
+/* Breadcrumb trail bar indicating current page hierarchy */
+.breadcrumb {
   background-color: var(--ScoutLightGrey);
   padding: 10px 15px;
 }
 
-.breadcrumb ul { /* Setting styles for unordered lists within elements with the class "breadcrumb", including width, list style, display, justification, and alignment. This class is used to create breadcrumb navigation on the webpage. */
+.breadcrumb ul {
   width: 100%;
   list-style: none;
   display: flex;
@@ -299,82 +336,91 @@ nav li:first-child { /* Setting styles for the first list item within the naviga
   align-items: center;
 }
 
-.breadcrumb li { /* Setting styles for list items within the breadcrumb, including alignment and transition effects. */
+.breadcrumb li {
   align-items: center;
   transition: all 0.3s ease;
 }
 
-.breadcrumb a { /* Setting styles for anchor elements within the breadcrumb, including color and text decoration. */
+.breadcrumb a {
   color: var(--ScoutTextGrey);
   text-decoration: none;
 }
 
-.breadcrumb a:hover { /* Setting styles for anchor elements within the breadcrumb on hover, including text decoration. */
+.breadcrumb a:hover {
   text-decoration: underline;
 }
 
-.breadcrumb svg { /* Setting styles for SVG elements within the breadcrumb, including width, height, and margin. */
+/* Aligns chevron separator icons vertically with breadcrumb text */
+.breadcrumb svg {
   margin-bottom: -6px;
 }
 
-.breadcrumb svg g { /* Setting styles for group elements within SVGs in the breadcrumb, including fill color. */
+.breadcrumb svg g {
   position: absolute;
   z-index: 1;
 }
 
-.main_header { /* Setting styles for elements with the class "main_header", including padding, maximum width, automatic left and right margins, and text alignment. This class is used to create a main header section on the webpage. */
+/* Full-width Scout Navy title banner used at the top of subpages */
+.main_header {
   padding: 20px;
   background-color: var(--ScoutNavy);
   color: white;
   align-items: center;
 }
 
-.main_header div { /* Setting styles for div elements within the main header, including padding, maximum width, automatic left and right margins, and text alignment. */
+/* Constrains inner page title width to match the 1000px content container */
+.main_header div {
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
   text-align: left;
 }
 
-/* Footer Styles */
 
-footer { /* Setting styles for the footer element, including background color, text color, text alignment, and padding. */
+/* ==========================================================================
+   SITE FOOTER
+   Scout Purple footer containing branding, multi-column link lists, and charity info.
+   ========================================================================== */
+
+footer {
   background-color: var(--ScoutPurple);
   color: white;
   text-align: center;
   padding: 20px;
 }
 
-footer img { /* Setting styles for image elements within the footer, including width and height. */
+footer img {
   width: 200px;
   height: 200px;
 }
 
-.footer_content { /* Setting styles for elements with the class "footer_content", including display, justification, wrapping, and padding. This class is used to create a content section within the footer that contains multiple sections. */
+/* Multi-column flexbox container for footer link groups */
+.footer_content {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 0 100px;
 }
 
-.footer_section { /* Setting styles for elements with the class "footer_section", including flex basis and padding. This class is used to create individual sections within the footer content. */
+.footer_section {
   flex-basis: 25%;
   padding: 20px;
 }
 
-footer a { /* Setting styles for anchor elements within the footer, including color and text decoration. */
+footer a {
   color: white;
 }
 
-footer hr { /* Setting styles for horizontal rule elements within the footer, including margin and border color. */
+footer hr {
   border-top: 1px solid rgba(255, 255, 255, 1);
 }
 
-footer a:hover { /* Setting styles for anchor elements within the footer on hover, including text decoration. */
+footer a:hover {
   color: white;
 }
 
-@media(max-width: 950px) { /* Setting styles for elements on screens with a maximum width of 950px, including adjusting the size of images in the footer, changing the layout of the footer content, and adjusting the text alignment and layout of footer sections. */
+/* Tablet/Mobile Breakpoint: Stacks footer columns vertically and reduces logo dimensions */
+@media(max-width: 950px) {
   footer img {
     width: 150px;
     height: 150px;

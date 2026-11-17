@@ -2,24 +2,34 @@
 <html>
 
 <head>
-    <title>7th Lichfield Scouts - Welcome</title> <!-- This sets the title of the webpage that appears in the browser tab. -->
-    <meta charset="UTF-8"> <!-- This specifies the character encoding for the HTML document, ensuring that text is displayed correctly. -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- This meta tag makes the webpage responsive by setting the viewport width to the device's width and the initial zoom level to 1.0. -->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i,900,900i&display=swap"> <!-- This link imports the "Nunito Sans" font from Google Fonts, allowing it to be used in the webpage's styling. -->
-    <link rel="stylesheet" href="CSS/MainStyles.css"> <!-- This link includes an external CSS file named "MainStyles.css" that contains the main styles for the webpage. -->
-    <link rel="stylesheet" href="CSS/MainPage.css"> <!-- This link includes another external CSS file named "MainPage.css" that contains additional styles specific to the main page of the website. -->
+    <!-- Document Title -->
+    <title>7th Lichfield Scouts - Welcome</title>
 
-    <!-- These two lines set the favicon for the webpage, which is the small icon displayed in the browser tab. The first line sets a dark mode favicon, while the second line sets a light mode favicon. -->
+    <!-- Meta Tags for Character Encoding and Responsive Viewport Scaling -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts (Nunito Sans) & Global/Page-Specific Stylesheets -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i,900,900i&display=swap">
+    <link rel="stylesheet" href="CSS/MainStyles.css">
+    <link rel="stylesheet" href="CSS/MainPage.css">
+
+    <!-- Adaptive Favicons matching OS Dark/Light Theme Preferences -->
     <link rel="icon" type="image/png" href="Images/7thLogoW.png" media="(prefers-color-scheme: dark)">
     <link rel="icon" type="image/png" href="Images/7thLogoB.png" media="(prefers-color-scheme: light)">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- This meta tag is repeated, but it serves the same purpose as the previous one, ensuring that the webpage is responsive on different devices. -->
 </head>
 
 <body>
+    <!-- =====================================================================
+         SITE HEADER & NAVIGATION
+         ===================================================================== -->
     <header>
         <nav>
-            <ul class="sidebar"> <!-- This list represents the sidebar navigation menu, which is typically hidden and can be toggled on smaller screens. -->
+            <!-- Slide-Out Mobile Navigation Drawer (Controlled by JS) -->
+            <ul class="sidebar">
+                <!-- Close Button triggering hideSidebar() -->
                 <li onclick=hideSidebar()>
                     <a>
                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
@@ -30,6 +40,7 @@
                         </svg>
                     </a>
                 </li>
+                <!-- Mobile Drawer Navigation Links -->
                 <li>
                     <a href="sections">Sections</a>
                 </li>
@@ -47,12 +58,15 @@
                 </li>
             </ul>
 
-            <ul class="navbar"> <!-- This list represents the main navigation bar that is typically visible on larger screens. -->
+            <!-- Primary Desktop Navigation Bar -->
+            <ul class="navbar">
+                <!-- Group Logo / Home Link -->
                 <li class="logo">
                     <a href="\">
                         <img src="Images/7thLogoB.png" alt="7th Lichfield Scouts Logo" style="height: 100px;">
                     </a>
                 </li>
+                <!-- Desktop Nav Links (Hidden on Mobile Viewports) -->
                 <li class="hideOnMobile">
                     <a href="sections">Sections</a>
                 </li>
@@ -68,6 +82,7 @@
                 <li class="hideOnMobile">
                     <a href="https://www.onlinescoutmanager.co.uk/login.php">OSM</a>
                 </li>
+                <!-- Mobile Hamburger Toggle triggering showSidebar() -->
                 <li class="menu-button" onclick=showSidebar()>
                     <a>
                         <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"
@@ -81,8 +96,12 @@
         </nav>
     </header>
 
+    <!-- =====================================================================
+         MAIN CONTENT AREA
+         ===================================================================== -->
     <main>
-        <div class="imagebackground" style="background-image: url('Images/CubsandYLRunning.jpg');"> <!-- This div creates a background image section with text overlay, welcoming visitors to the 7th Lichfield Scouts website and providing a brief introduction. -->
+        <!-- Hero Background Banner Section -->
+        <div class="imagebackground" style="background-image: url('Images/CubsandYLRunning.jpg');">
             <div class="imagebackground_text">
                 <h1 style="opacity: 100%;">Welcome to the 7th Lichfield Scouts Website</h1>
                 <p>We are a group of enthusiastic scouts based in Lichfield, dedicated to providing young people with
@@ -91,10 +110,12 @@
             </div>
         </div>
 
-        <div class="div_break"></div> <!-- This div serves as a visual break or separator between sections of the webpage, styled with CSS to create spacing or a line. -->
+        <!-- Visual Content Divider -->
+        <div class="div_break"></div>
 
-        <div class="join_us"> <!-- This div contains a call-to-action section encouraging visitors to join the scouts or volunteer, with buttons linking to relevant pages. -->
-            <img src="Images/triple_image.png">
+        <!-- Join Us Call-to-Action Section -->
+        <div class="join_us">
+            <img src="Images/triple_image.png" alt="Scouts participating in outdoor group activities">
             <div>
                 <h1>Giving young people a place to belong</h1>
                 <h3>Are you ready to join the adventure?</h3>
@@ -105,10 +126,13 @@
             </div>
         </div>
 
+        <!-- Age Groups Overview Section -->
         <div>
-            <div> <!-- This div contains a section that introduces the different age groups within the scouts, with cards linking to each section's page. -->
+            <div>
                 <h2 style="text-align: center; padding: 20px;">Explore our age groups</h2>
+                <!-- Grid Container holding individual section age cards -->
                 <div class="section_card_holder">
+                    <!-- Squirrels Card (4-6 Years) -->
                     <div>
                         <a href="sections/squirrels" class="squirrels_card">
                             <svg xmlns="http://www.w3.org/2000/svg" width="107" height="24" viewBox="0 0 107 24">
@@ -154,6 +178,8 @@
                             <p><b>4-6 Years</b></p>
                         </a>
                     </div>
+
+                    <!-- Beavers Card (6-8 Years) -->
                     <div>
                         <a href="sections/beavers" class="beavers_card">
                             <svg xmlns="http://www.w3.org/2000/svg" width="90" height="25" viewBox="0 0 90 25">
@@ -164,6 +190,8 @@
                             <p><b>6-8 Years</b></p>
                         </a>
                     </div>
+
+                    <!-- Cubs Card (8-10½ Years) -->
                     <div>
                         <a href="sections/cubs" class="cubs_card">
                             <svg xmlns="http://www.w3.org/2000/svg" width="57" height="23" viewBox="0 0 57 23">
@@ -174,6 +202,8 @@
                             <p><b>8-10½ years</b></p>
                         </a>
                     </div>
+
+                    <!-- Scouts Card (10½-14 Years) -->
                     <div>
                         <a href="sections/scouts" class="scouts_card">
                             <svg xmlns="http://www.w3.org/2000/svg" width="93" height="18" viewBox="0 0 93 18">
@@ -190,7 +220,8 @@
             </div>
         </div>
 
-        <div class="safeguarding_card"> <!-- This div contains information about safeguarding and safety measures within the scouts. -->
+        <!-- Safeguarding and Safety Resources Section -->
+        <div class="safeguarding_card">
             <div>
                 <h2>Safeguarding and safety at Scouts</h2>
                 <a href="https://www.scouts.org.uk/what-scouts-do/stay-safe/">Wherever we go and whatever we do, we
@@ -241,10 +272,16 @@
         </div>
     </main>
 
-    <footer> <!-- This footer section contains the logo, useful links, more information, and social media links for the 7th Lichfield Scouts website. -->
+    <!-- =====================================================================
+         SITE FOOTER
+         ===================================================================== -->
+    <footer>
+        <!-- White HQ Logo -->
         <img src="Images/7th_hq_logo_white.png" alt="7th Lichfield Scouts Logo">
         <hr>
+        <!-- Footer Multi-Column Links -->
         <div class="footer_content">
+            <!-- National Scout Association Links -->
             <div class="footer_section">
                 <h2>Useful Links</h2>
                 <a href="https://www.scouts.org.uk/">The Scout Association</a><br>
@@ -252,6 +289,7 @@
                 <a href="https://www.scouts.org.uk/activities/">Scouting Activities</a><br>
                 <a href="https://www.scouts.org.uk/join/">Join Scouts</a><br>
             </div>
+            <!-- Internal Quick Navigation Links -->
             <div class="footer_section">
                 <h2>More Info</h2>
                 <a href="sections">Sections</a><br>
@@ -260,17 +298,20 @@
                 <a href="contact">Contact Us</a><br>
                 <a href="https://www.onlinescoutmanager.co.uk/login.php">OSM</a><br>
             </div>
+            <!-- Social Media Section Placeholder -->
             <div class="footer_section">
                 <h2>Follow Us</h2>
             </div>
         </div>
         <hr>
-        <p><small>7th Lichfield Scout Group is a registered charity.<br>Our charity number is: 1021870.<br>&copy; 2026
+        <!-- Charity Registration Number & Copyright Notice -->
+        <p><small>7th Lichfield Scout Group is a registered charity.<br>Our charity number is: 1021870.<br>© 2026
                 7th Lichfield Scouts. All rights reserved.</small>
         </p>
     </footer>
 
-    <script src="JS/Menu.js"></script> <!-- This script is responsible for the navigationfunctionality of the website. -->
+    <!-- Script for Mobile Sidebar Toggle Functionality -->
+    <script src="JS/Menu.js"></script>
 </body>
 
 </html>

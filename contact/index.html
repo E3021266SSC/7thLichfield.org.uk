@@ -2,28 +2,38 @@
 <html>
 
 <head>
-    <title>7th Lichfield Scouts - Contact Us</title> <!-- This is the title of the page that appears in the browser tab -->
-    <meta charset="UTF-8"> <!-- This specifies the character encoding for the HTML document -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- This makes the website responsive to different screen sizes -->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i,900,900i&display=swap"> <!-- This imports the Nunito Sans font from Google Fonts -->
-    <link rel="stylesheet" href="\CSS/MainStyles.css"> <!-- This links to the main CSS stylesheet for the website -->
-    <link rel="stylesheet" href="\CSS/Contact.css"> <!-- This links to the CSS stylesheet specific to the contact page -->
+    <!-- Document Title -->
+    <title>7th Lichfield Scouts - Contact Us</title>
 
-     <!-- This sets the favicon for the website, which is the small icon that appears in the browser tab -->
+    <!-- Meta Tags for Character Encoding and Responsive Design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- External Google Fonts (Nunito Sans) and Stylesheets -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i,900,900i&display=swap">
+    <link rel="stylesheet" href="\CSS/MainStyles.css">
+    <link rel="stylesheet" href="\CSS/Contact.css">
+
+    <!-- Adaptive Favicons based on OS Dark/Light Theme Preferences -->
     <link rel="icon" type="image/png" href="\Images/7thLogoW.png" media="(prefers-color-scheme: dark)">
     <link rel="icon" type="image/png" href="\Images/7thLogoB.png" media="(prefers-color-scheme: light)">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- This meta tag is repeated and can be removed as it is already included above -->
 </head>
 
 <body>
+    <!-- =====================================================================
+         SITE HEADER & NAVIGATION
+         ===================================================================== -->
     <header>
         <nav>
-            <ul class="sidebar"> <!-- This is the sidebar navigation menu that appears on mobile devices -->
+            <!-- Mobile Slide-Out Sidebar Navigation -->
+            <ul class="sidebar">
                 <li onclick=hideSidebar()>
                     <a href="#">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
                             fill="#1f1f1f">
+                            <title id="uniqueTitleID">Exit Navigation Menu</title>
                             <path
                                 d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
                         </svg>
@@ -46,7 +56,8 @@
                 </li>
             </ul>
 
-            <ul class="navbar"> <!-- This is the main navigation bar that appears on larger screens -->
+            <!-- Primary Desktop Navigation Bar -->
+            <ul class="navbar">
                 <li class="logo">
                     <a href="\">
                         <img src="\Images/7thLogoB.png" alt="7th Lichfield Scouts Logo" style="height: 100px;">
@@ -71,18 +82,21 @@
                     <a href="#">
                         <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"
                             fill="#1f1f1f">
+                            <title id="uniqueTitleID">Navigation Menu</title>
                             <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
                         </svg>
                     </a>
                 </li>
             </ul>
         </nav>
-        <div class="breadcrumb"> <!-- This is the breadcrumb navigation that shows the user's current location within the website -->
+
+        <!-- Breadcrumb Navigation Trail -->
+        <div class="breadcrumb">
             <ul>
                 <li>
                     <a href="\">Home</a>
                 </li>
-                <li>
+                <li class="arrow">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="feather feather-chevron-right">
@@ -96,16 +110,22 @@
         </div>
     </header>
 
+    <!-- =====================================================================
+         MAIN CONTENT AREA
+         ===================================================================== -->
     <main>
-        <div class="main_header"> <!-- This is the main header section of the contact page -->
+        <div class="main_header">
             <div>
                 <h1>Contact Us</h1>
             </div>
         </div>
-        <div class="contact_details"> <!-- This is the section that contains the contact details for various members of the 7th Lichfield Scouts -->
+
+        <!-- Contact Details Grid -->
+        <div class="contact_details">
             <h2>Our Contact Details:</h2>
             <br>
             <div class="details">
+                <!-- Executive & Group Leadership Contacts -->
                 <div>
                     <h4>Chairman of Trustees</h4>
                     <p>Greg Vanes</p>
@@ -120,13 +140,13 @@
                     <h4>Group Lead Volunteer</h4>
                     <p>Richard Taylor</p>
                     <p>Email: <a href="mailto:gsl@7thlichfield.org.uk">gsl@7thlichfield.org.uk</a></p>
-                    <p>Phone: <a href="tel:07758 940990">07758 940990</a></p>
+                    <p>Phone: <a href="tel:07758940990">07758 940990</a></p>
                 </div>
                 <div>
                     <h4>Waiting List Enquiries</h4>
                     <p>Cath Babington</p>
                     <p>Email: <a href="mailto:waitinglist@7thlichfield.org.uk">waitinglist@7thlichfield.org.uk</a></p>
-                    <p>Phone: <a href="tel:01543 251089">01543 251089</a></p>
+                    <p>Phone: <a href="tel:01543251089">01543 251089</a></p>
                 </div>
                 <div>
                     <h4>Paddlesports</h4>
@@ -134,49 +154,47 @@
                     <p>Email: <a href="mailto:dave.gentle@7thlichfield.org.uk">dave.gentle@7thlichfield.org.uk</a></p>
                 </div>
 
+                <!-- Squirrels Section Leaders (Ages 4-6) -->
                 <div id="acorn">
                     <h4>Thursday Squirrels Lead Volunteer (Acorn Drey)</h4>
                     <p>Cathryn Fowkes</p>
                     <p>Email: <a href="mailto:acorn@7thlichfield.org.uk">acorn@7thlichfield.org.uk</a></p>
                 </div>
-
                 <div id="chestnut">
                     <h4>Saturday Squirrels Lead Volunteer (Chestnut Drey)</h4>
                     <p>Katrina Creaser</p>
                     <p>Email: <a href="mailto:chestnut@7thlichfield.org.uk">chestnut@7thlichfield.org.uk</a></p>
                 </div>
 
+                <!-- Beavers Section Leaders (Ages 6-8) -->
                 <div id="garrick">
                     <h4>Monday Beaver Lead Volunteer (Garrick Colony)</h4>
                     <p>Sally Linsey</p>
                     <p>Email: <a href="mailto:garrick@7thlichfield.org.uk">garrick@7thlichfield.org.uk</a></p>
                 </div>
-
                 <div id="paget">
                     <h4>Tuesday Beaver Lead Volunteer (Paget Colony)</h4>
                     <p>Sarah Guest</p>
-                    <p>Email: <a href="mailto:paget@7thlicfhield.org.uk">paget@7thlicfhield.org.uk</a></p>
+                    <p>Email: <a href="mailto:paget@7thlichfield.org.uk">paget@7thlichfield.org.uk</a></p>
                 </div>
-
                 <div id="swinfen">
                     <h4>Wednesday Beaver Lead Volunteer (Swinfen Colony)</h4>
                     <p>Mick Woodrow</p>
                     <p>Email: <a href="mailto:swinfen@7thlichfield.org.uk">swinfen@7thlichfield.org.uk</a></p>
                 </div>
 
+                <!-- Cubs Section Leaders (Ages 8-10½) -->
                 <div id="rowallan">
                     <h4>Tuesday Cub Lead Volunteer (Rowallan Pack)</h4>
                     <p>Jo Docker</p>
                     <p>Email: <a href="mailto:rowallan@7thlichfield.org.uk">rowallan@7thlichfield.org.uk</a></p>
                 </div>
-
                 <div id="maclean">
                     <h4>Wednesday Cub Lead Volunteer (Maclean Pack)</h4>
                     <p>Mark Ridley</p>
                     <p>Email: <a href="mailto:maclean@7thlichfield.org.uk">maclean@7thlichfield.org.uk</a></p>
                     <p>Phone: <a href="tel:07778483853">07778 483853</a></p>
                 </div>
-
                 <div id="somers">
                     <h4>Saturday Cub Lead Volunteer (Somers Pack)</h4>
                     <p>Richard Taylor</p>
@@ -184,31 +202,33 @@
                     <p>Phone: <a href="tel:07758940990">07758 940990</a></p>
                 </div>
 
+                <!-- Scouts Section Leaders (Ages 10½-14) -->
                 <div id="boswell">
                     <h4>Monday Scout Lead Volunteer (Boswell Troop)</h4>
                     <p>Kev O'Riordan</p>
                     <p>Email: <a href="mailto:boswell@7thlichfield.org.uk">boswell@7thlichfield.org.uk</a></p>
                     <p>Phone: <a href="tel:01543306752">01543 306752</a></p>
                 </div>
-
                 <div id="johnson">
                     <h4>Thursday Scout Lead Volunteer (Johnson Troop)</h4>
                     <p>Steph Stafford</p>
                     <p>Email: <a href="mailto:johnson@7thlichfield.org.uk">johnson@7thlichfield.org.uk</a></p>
                 </div>
-
                 <div id="erasmus">
                     <h4>Friday Scout Lead Volunteer (Erasmus Troop)</h4>
                     <p>Nick Crosby</p>
                     <p>Email: <a href="mailto:erasmus@7thlichfield.org.uk">erasmus@7thlichfield.org.uk</a></p>
                 </div>
             </div>
-            <a href="form" class="form"> <!-- This is the section that contains the contact form and redirects to the contact form page when clicked -->
+
+            <!-- Link to Contact Form Page -->
+            <a href="form" class="form">
                 <b>Contact Us Form</b>
             </a>
         </div>
 
-        <div class="location"> <!-- This is the section that contains the location of the 7th Lichfield Scouts headquarters -->
+        <!-- Location & Map Section -->
+        <div class="location">
             <div>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2418.5533560904264!2d-1.8106564227824449!3d52.68610287210518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870a7f708c104ef%3A0xa33b67da9171678b!2s7th%20Lichfield%20Scouts!5e0!3m2!1sen!2suk!4v1791908105697!5m2!1sen!2suk"
@@ -226,8 +246,8 @@
             </div>
         </div>
 
-
-        <div class="safeguarding_card"> <!-- This is the section that contains information about safeguarding and safety at Scouts -->
+        <!-- Safeguarding and Safety Resources Section -->
+        <div class="safeguarding_card">
             <div>
                 <h2>Safeguarding and safety at Scouts</h2>
                 <a href="https://www.scouts.org.uk/what-scouts-do/stay-safe/">Wherever we go and whatever we do, we
@@ -278,7 +298,10 @@
         </div>
     </main>
 
-    <footer> <!-- This is the footer section of the website that contains useful links, more information, and social media links -->
+    <!-- =====================================================================
+         SITE FOOTER
+         ===================================================================== -->
+    <footer>
         <img src="\Images/7th_hq_logo_white.png" alt="7th Lichfield Scouts Logo">
         <hr>
         <div class="footer_content">
@@ -302,11 +325,12 @@
             </div>
         </div>
         <hr>
-        <p><small>7th Lichfield Scout Group is a registered charity.<br>Our charity number is: 1021870.<br>&copy; 2026
+        <p><small>7th Lichfield Scout Group is a registered charity.<br>Our charity number is: 1021870.<br>© 2026
                 7th Lichfield Scouts. All rights reserved.</small>
         </p>
     </footer>
 
+    <!-- External JavaScript for Mobile Sidebar Menu Toggle -->
     <script src="\JS/Menu.js"></script>
 </body>
 

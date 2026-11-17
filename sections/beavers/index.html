@@ -2,23 +2,33 @@
 <html>
 
 <head>
+    <!-- Document Title -->
     <title>7th Lichfield Scouts - Beavers</title>
+
+    <!-- Meta Tags for Character Encoding and Responsive Design -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- External Google Fonts (Nunito Sans) and Stylesheets -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i,900,900i&display=swap">
     <link rel="stylesheet" href="\CSS/MainStyles.css">
     <link rel="stylesheet" href="\CSS/Sections.css">
 
+    <!-- Dynamic Favicons based on system color scheme (Dark/Light mode) -->
     <link rel="icon" type="image/png" href="\Images/7thLogoW.png" media="(prefers-color-scheme: dark)">
     <link rel="icon" type="image/png" href="\Images/7thLogoB.png" media="(prefers-color-scheme: light)">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
+    <!-- Site Header Container -->
     <header>
+        <!-- Main Navigation Bar -->
         <nav>
+            <!-- Mobile/Slide-out Sidebar Navigation -->
             <ul class="sidebar">
+                <!-- Close Button for Sidebar -->
                 <li onclick=hideSidebar()>
                     <a href="#">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
@@ -29,6 +39,7 @@
                         </svg>
                     </a>
                 </li>
+                <!-- Sidebar Nav Links -->
                 <li>
                     <a href="\sections">Sections</a>
                 </li>
@@ -46,12 +57,15 @@
                 </li>
             </ul>
 
+            <!-- Standard Top Navbar (Desktop & Tablet) -->
             <ul class="navbar">
+                <!-- Group Logo / Home Link -->
                 <li class="logo">
                     <a href="\">
                         <img src="\Images/7thLogoB.png" alt="7th Lichfield Scouts Logo" style="height: 100px;">
                     </a>
                 </li>
+                <!-- Desktop Nav Links (Hidden on Mobile) -->
                 <li class="hideOnMobile">
                     <a href="\sections">Sections</a>
                 </li>
@@ -67,6 +81,7 @@
                 <li class="hideOnMobile">
                     <a href="https://www.onlinescoutmanager.co.uk/login.php">OSM</a>
                 </li>
+                <!-- Hamburger Menu Button to Trigger Sidebar -->
                 <li class="menu-button" onclick=showSidebar()>
                     <a href="#">
                         <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"
@@ -79,6 +94,7 @@
             </ul>
         </nav>
 
+        <!-- Breadcrumb Navigation Trail -->
         <div class="breadcrumb">
             <ul>
                 <li>
@@ -108,12 +124,16 @@
         </div>
     </header>
 
+    <!-- Main Page Content Area -->
     <main>
+        <!-- Section Theme Header (Styled Blue for Beavers) -->
         <div class="main_header" id="Beavers_Header">
             <div>
                 <h1>Beavers</h1>
             </div>
         </div>
+
+        <!-- Introductory Information Card for Beavers -->
         <div class="Section_Info">
             <h2>Welcome to Beavers!</h2>
             <p>Beavers is the second section of the Scout Movement, welcoming boys and girls aged 6 to 8 years old. It's
@@ -138,7 +158,10 @@
                 enjoy everything that Scouting has to offer.
             </p>
         </div>
+
+        <!-- Interactive Colony Navigation Cards Grid -->
         <div class="section_card_holder">
+            <!-- Garrick Colony Card -->
             <div>
                 <a class="beavers_card" href="#garrick"
                     onclick="showSection('garrick'); hideSection('paget'); hideSection('swinfen');">
@@ -150,6 +173,7 @@
                     <p><b>Garrick Colony</b></p>
                 </a>
             </div>
+            <!-- Paget Colony Card -->
             <div>
                 <a class="beavers_card" href="#paget"
                     onclick="showSection('paget'); hideSection('garrick'); hideSection('swinfen');">
@@ -161,6 +185,7 @@
                     <p><b>Paget Colony</b></p>
                 </a>
             </div>
+            <!-- Swinfen Colony Card -->
             <div>
                 <a class="beavers_card" href="#swinfen"
                     onclick="showSection('swinfen'); hideSection('garrick'); hideSection('paget');">
@@ -173,7 +198,10 @@
                 </a>
             </div>
         </div>
+
+        <!-- Collapsible Colony Details Container -->
         <div class="Sections" id="Beavers_Sections">
+            <!-- Garrick Colony Details Block -->
             <div id="garrick">
                 <h3>Garrick Colony</h3>
                 <span class="meeting-day">Monday @ 5:15-6:15pm</span>
@@ -183,9 +211,11 @@
                     their time in Garrick, Beavers can build friendships, develop their confidence and experience
                     everything that Scouting has to offer.
                     <br><br>
-                    Contact the <a href="\contact#garrick">Garrick Beaver Colony Lead Volunteer</a> for more information about Garrick Colony.
+                    Contact the <a href="\contact#garrick">Garrick Beaver Colony Lead Volunteer</a> for more information
+                    about Garrick Colony.
                 </p>
             </div>
+            <!-- Paget Colony Details Block -->
             <div id="paget">
                 <h3>Paget Colony</h3>
                 <span class="meeting-day">Tuesday @ 5:15-6:15pm</span>
@@ -194,22 +224,28 @@
                     young people to have fun, develop their confidence and take part in exciting activities. Beavers are
                     encouraged to try new things, make friends and learn new skills as part of the 7th Lichfield family.
                     <br><br>
-                    Contact the <a href="\contact#paget">Paget Beaver Colony Lead Volunteer</a> for more information about Paget Colony.
+                    Contact the <a href="\contact#paget">Paget Beaver Colony Lead Volunteer</a> for more information
+                    about Paget Colony.
                 </p>
             </div>
+            <!-- Swinfen Colony Details Block -->
             <div id="swinfen">
                 <h3>Swinfen Colony</h3>
                 <span class="meeting-day">Wednesday @ 5:15-6:15pm</span>
                 <p>
                     Swinfen Colony is one of our three Beaver Colonies. It's a welcoming place where young people can
-                    explore new interests, make friends and enjoy a wide range of activities. Beavers have opportunities to
+                    explore new interests, make friends and enjoy a wide range of activities. Beavers have opportunities
+                    to
                     develop their confidence, learn new skills and take part in exciting adventures as part of the 7th
                     Lichfield family.
                     <br><br>
-                    Contact the <a href="\contact#swinfen">Swinfen Beaver Colony Lead Volunteer</a> for more information about Paget Colony.
+                    Contact the <a href="\contact#swinfen">Swinfen Beaver Colony Lead Volunteer</a> for more information
+                    about Paget Colony.
                 </p>
             </div>
+            <!-- Visual Divider Line -->
             <div class="div_break" id="break"></div>
+            <!-- Joining Information Card -->
             <div id="join">
                 <h3>Joining Beavers?</h3>
                 <p>Interested in joining our Beavers section?
@@ -224,10 +260,14 @@
         </div>
     </main>
 
+    <!-- Site Footer Container -->
     <footer>
+        <!-- Footer Branding Logo -->
         <img src="\Images/7th_hq_logo_white.png" alt="7th Lichfield Scouts Logo">
         <hr>
+        <!-- Footer Links and Information Sections -->
         <div class="footer_content">
+            <!-- Useful External Links -->
             <div class="footer_section">
                 <h2>Useful Links</h2>
                 <a href="https://www.scouts.org.uk/">The Scout Association</a><br>
@@ -235,6 +275,7 @@
                 <a href="https://www.scouts.org.uk/activities/">Scouting Activities</a><br>
                 <a href="https://www.scouts.org.uk/join/">Join Scouts</a><br>
             </div>
+            <!-- Internal Navigation Quick Links -->
             <div class="footer_section">
                 <h2>More Info</h2>
                 <a href="\sections">Sections</a><br>
@@ -243,16 +284,19 @@
                 <a href="\contact">Contact Us</a><br>
                 <a href="https://www.onlinescoutmanager.co.uk/login.php">OSM</a><br>
             </div>
+            <!-- Social Media Section Placeholder -->
             <div class="footer_section">
                 <h2>Follow Us</h2>
             </div>
         </div>
         <hr>
-        <p><small>7th Lichfield Scout Group is a registered charity.<br>Our charity number is: 1021870.<br>&copy; 2026
+        <!-- Charity Registration and Copyright Legal Information -->
+        <p><small>7th Lichfield Scout Group is a registered charity.<br>Our charity number is: 1021870.<br>© 2026
                 7th Lichfield Scouts. All rights reserved.</small>
         </p>
     </footer>
 
+    <!-- External JavaScript for Menu / Sidebar and Sections Functionality -->
     <script src="\JS/Menu.js"></script>
     <script src="\JS/Sections.js"></script>
 </body>

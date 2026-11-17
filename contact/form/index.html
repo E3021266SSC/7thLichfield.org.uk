@@ -2,22 +2,34 @@
 <html>
 
 <head>
+    <!-- Document Title -->
     <title>7th Lichfield Scouts - Contact Form</title>
+
+    <!-- Meta Tags for Character Encoding and Responsive Design -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- External Google Fonts (Nunito Sans) and Main Stylesheet -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i,900,900i&display=swap">
     <link rel="stylesheet" href="\CSS/MainStyles.css">
 
+    <!-- Dynamic Favicons based on system color scheme (Dark/Light mode) -->
     <link rel="icon" type="image/png" href="\Images/7thLogoW.png" media="(prefers-color-scheme: dark)">
     <link rel="icon" type="image/png" href="\Images/7thLogoB.png" media="(prefers-color-scheme: light)">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
+    <!-- =====================================================================
+         SITE HEADER & NAVIGATION
+         ===================================================================== -->
     <header>
+        <!-- Main Navigation Bar -->
         <nav>
+            <!-- Mobile/Slide-out Sidebar Navigation -->
             <ul class="sidebar">
+                <!-- Close Button for Sidebar -->
                 <li onclick=hideSidebar()>
                     <a href="#">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
@@ -28,6 +40,7 @@
                         </svg>
                     </a>
                 </li>
+                <!-- Sidebar Nav Links -->
                 <li>
                     <a href="\sections">Sections</a>
                 </li>
@@ -45,12 +58,15 @@
                 </li>
             </ul>
 
+            <!-- Standard Top Navbar (Desktop & Tablet) -->
             <ul class="navbar">
+                <!-- Group Logo / Home Link -->
                 <li class="logo">
                     <a href="\">
                         <img src="\Images/7thLogoB.png" alt="7th Lichfield Scouts Logo" style="height: 100px;">
                     </a>
                 </li>
+                <!-- Desktop Nav Links (Hidden on Mobile) -->
                 <li class="hideOnMobile">
                     <a href="\sections">Sections</a>
                 </li>
@@ -66,6 +82,7 @@
                 <li class="hideOnMobile">
                     <a href="https://www.onlinescoutmanager.co.uk/login.php">OSM</a>
                 </li>
+                <!-- Hamburger Menu Button to Trigger Sidebar -->
                 <li class="menu-button" onclick=showSidebar()>
                     <a href="#">
                         <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"
@@ -77,6 +94,8 @@
                 </li>
             </ul>
         </nav>
+
+        <!-- Breadcrumb Navigation Trail -->
         <div class="breadcrumb">
             <ul>
                 <li>
@@ -106,20 +125,34 @@
         </div>
     </header>
 
+    <!-- =====================================================================
+         MAIN CONTENT AREA
+         ===================================================================== -->
     <main>
         <form>
+            <!-- First Name Input Field -->
             <label for="fname">First name:</label><br>
             <input type="text" id="fname" name="fname" value="John"><br>
+
+            <!-- Last Name Input Field -->
             <label for="lname">Last name:</label><br>
             <input type="text" id="lname" name="lname" value="Doe"><br><br>
+
+            <!-- Form Submit Button -->
             <input type="submit" value="Submit">
         </form>
     </main>
 
+    <!-- =====================================================================
+         SITE FOOTER
+         ===================================================================== -->
     <footer>
+        <!-- Footer Branding Logo -->
         <img src="\Images/7th_hq_logo_white.png" alt="7th Lichfield Scouts Logo">
         <hr>
+        <!-- Footer Links and Information Sections -->
         <div class="footer_content">
+            <!-- Useful External Links -->
             <div class="footer_section">
                 <h2>Useful Links</h2>
                 <a href="https://www.scouts.org.uk/">The Scout Association</a><br>
@@ -127,6 +160,7 @@
                 <a href="https://www.scouts.org.uk/activities/">Scouting Activities</a><br>
                 <a href="https://www.scouts.org.uk/join/">Join Scouts</a><br>
             </div>
+            <!-- Internal Navigation Quick Links -->
             <div class="footer_section">
                 <h2>More Info</h2>
                 <a href="\sections">Sections</a><br>
@@ -135,16 +169,19 @@
                 <a href="\contact">Contact Us</a><br>
                 <a href="https://www.onlinescoutmanager.co.uk/login.php">OSM</a><br>
             </div>
+            <!-- Social Media Section Placeholder -->
             <div class="footer_section">
                 <h2>Follow Us</h2>
             </div>
         </div>
         <hr>
-        <p><small>7th Lichfield Scout Group is a registered charity.<br>Our charity number is: 1021870.<br>&copy; 2026
+        <!-- Charity Registration and Copyright Legal Information -->
+        <p><small>7th Lichfield Scout Group is a registered charity.<br>Our charity number is: 1021870.<br>© 2026
                 7th Lichfield Scouts. All rights reserved.</small>
         </p>
     </footer>
 
+    <!-- External JavaScript for Menu / Sidebar Functionality -->
     <script src="\JS/Menu.js"></script>
 </body>
 

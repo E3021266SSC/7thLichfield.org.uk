@@ -1,6 +1,11 @@
-/* Section Cards */
+/* ==========================================================================
+   SCOUT SECTION NAVIGATION CARDS
+   Interactive 150x150px tiles for Squirrels, Beavers, Cubs, and Scouts that
+   scale up and adopt official section brand colors on hover.
+   ========================================================================== */
 
-.section_card_holder { /* This is the styling for the container that holds the section cards */
+/* Centered flex-wrap container spacing out the four section cards evenly */
+.section_card_holder {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -11,10 +16,11 @@
   margin-right: auto;
 }
 
+/* Base card layout, elevation box-shadow, and smooth hover transition */
 .squirrels_card,
 .beavers_card,
 .cubs_card,
-.scouts_card { /* This is the styling for the individual section cards */
+.scouts_card {
   background-color: #fff;
   box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.2), 0px 0px 20px 20px rgba(0, 0, 0, 0.19);
   height: 150px;
@@ -30,6 +36,7 @@
   transition: all .3s ease;
 }
 
+/* Internal padding separating section icons from their text labels */
 .squirrels_card p,
 .beavers_card p,
 .cubs_card p,
@@ -37,45 +44,48 @@
 .squirrels_card svg,
 .beavers_card svg,
 .cubs_card svg,
-.scouts_card svg { /* This is the styling for the text and SVG icons inside the section cards */
+.scouts_card svg {
   padding: 5px;
 }
 
-
+/* Shared hover state: scales card up by 10%, deepens drop-shadow, and sets text to white */
 .squirrels_card:hover,
 .beavers_card:hover,
 .cubs_card:hover,
-.scouts_card:hover { /* This is the styling for the section cards when hovered over */
+.scouts_card:hover {
   color: white;
   text-decoration: none;
   box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.4), 0px 0px 20px 20px rgba(0, 0, 0, 0.19);
   transform: scale(1.1);
 }
 
+/* Switches nested SVG icon paths and groups to white to contrast against colored hover backgrounds */
 .squirrels_card:hover svg g g,
 .beavers_card:hover svg path,
 .cubs_card:hover svg path,
-.scouts_card:hover svg g { /* This is the styling for the SVG icons inside the section cards when hovered over */
+.scouts_card:hover svg g {
   fill: white;
 }
 
-.squirrels_card:hover { /* This is the styling for the squirrels card when hovered over */
+/* Section-specific official brand background colors on hover */
+.squirrels_card:hover {
   background-color: var(--ScoutRed);
 }
 
-.beavers_card:hover { /* This is the styling for the beavers card when hovered over */
+.beavers_card:hover {
   background-color: var(--ScoutBlue);
 }
 
-.cubs_card:hover { /* This is the styling for the cubs card when hovered over */
+.cubs_card:hover {
   background-color: var(--ScoutGreen);
 }
 
-.scouts_card:hover { /* This is the styling for the scouts card when hovered over */
+.scouts_card:hover {
   background-color: var(--ScoutForestGreen);
 }
 
-@media(max-width:420px) { /* This is the styling for the section cards when the screen width is less than or equal to 420px */
+/* Small Mobile Breakpoint: Widens cards into rectangular banners and enlarges inner text/icons */
+@media(max-width:420px) {
 
   .squirrels_card,
   .beavers_card,
@@ -97,8 +107,13 @@
   }
 }
 
-/* Sections sub pages */
 
+/* ==========================================================================
+   SECTIONS SUBPAGES (SQUIRRELS, BEAVERS, CUBS, SCOUTS)
+   Section-themed page headers, overview containers, and individual Drey/Colony/Pack/Troop blocks.
+   ========================================================================== */
+
+/* Overrides the default Scout Navy .main_header background to match each age section */
 .main_header#Squirrels_Header {
   background-color: var(--ScoutRed);
 }
@@ -115,6 +130,7 @@
   background-color: var(--ScoutForestGreen);
 }
 
+/* General introductory content box explaining the age group and activities */
 .Section_Info {
   background-color: var(--ScoutLightGrey);
   max-width: 1000px;
@@ -125,6 +141,7 @@
   padding: 20px;
 }
 
+/* Main container housing individual meeting groups (Dreys, Colonies, Packs, or Troops) */
 .Sections {
   background-color: var(--ScoutLightGrey);
   max-width: 1040px;
@@ -134,34 +151,38 @@
   margin-bottom: 30px;
 }
 
-.Sections div{
+.Sections div {
   padding: 20px;
 }
 
+/* Hides individual section group blocks by default until revealed/toggled via JS or selection */
 .Sections div:not(#join, #break) {
   display: none;
 }
 
-.Sections#Squirrels_Sections div:not(#join) h3{
+/* Themes group subheadings (h3) in each section's official brand color, excluding the #join CTA */
+.Sections#Squirrels_Sections div:not(#join) h3 {
   color: var(--ScoutRed);
 }
 
-.Sections#Beavers_Sections div:not(#join) h3{
+.Sections#Beavers_Sections div:not(#join) h3 {
   color: var(--ScoutBlue);
 }
 
-.Sections#Cubs_Sections div:not(#join) h3{
+.Sections#Cubs_Sections div:not(#join) h3 {
   color: var(--ScoutGreen);
 }
 
-.Sections#Scouts_Sections div:not(#join) h3{
+.Sections#Scouts_Sections div:not(#join) h3 {
   color: var(--ScoutForestGreen);
 }
 
-.Sections div:not(#join) h3{
+/* Tightens spacing between group titles and their meeting-day pill badges */
+.Sections div:not(#join) h3 {
   margin-bottom: 0px;
 }
 
+/* Pill-shaped badge highlighting the weekly meeting day/time for each group */
 .Sections .meeting-day {
   display: inline-block;
   background: var(--ScoutPurple);
@@ -174,6 +195,7 @@
   margin-bottom: 10px;
 }
 
+/* Overrides the standard teal .div_break with a clean white divider inside section containers */
 .Sections .div_break#break {
   background-color: white;
 }

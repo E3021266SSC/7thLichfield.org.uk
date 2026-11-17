@@ -2,23 +2,34 @@
 <html>
 
 <head>
+    <!-- Document Title -->
     <title>7th Lichfield Scouts - Cubs</title>
+
+    <!-- Meta Tags for Character Encoding and Responsive Viewport Scaling -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts (Nunito Sans) & Global/Section-Specific Stylesheets -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i,900,900i&display=swap">
     <link rel="stylesheet" href="\CSS/MainStyles.css">
     <link rel="stylesheet" href="\CSS/Sections.css">
 
+    <!-- Adaptive Favicons matching OS Dark/Light Theme Preferences -->
     <link rel="icon" type="image/png" href="\Images/7thLogoW.png" media="(prefers-color-scheme: dark)">
     <link rel="icon" type="image/png" href="\Images/7thLogoB.png" media="(prefers-color-scheme: light)">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
+    <!-- =====================================================================
+         SITE HEADER & NAVIGATION
+         ===================================================================== -->
     <header>
         <nav>
+            <!-- Slide-Out Mobile Navigation Drawer (Controlled by JS) -->
             <ul class="sidebar">
+                <!-- Close Button triggering hideSidebar() -->
                 <li onclick=hideSidebar()>
                     <a href="#">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
@@ -29,6 +40,7 @@
                         </svg>
                     </a>
                 </li>
+                <!-- Mobile Drawer Navigation Links -->
                 <li>
                     <a href="\sections">Sections</a>
                 </li>
@@ -46,12 +58,15 @@
                 </li>
             </ul>
 
+            <!-- Primary Desktop Navigation Bar -->
             <ul class="navbar">
+                <!-- Group Logo / Home Link -->
                 <li class="logo">
                     <a href="\">
                         <img src="\Images/7thLogoB.png" alt="7th Lichfield Scouts Logo" style="height: 100px;">
                     </a>
                 </li>
+                <!-- Desktop Nav Links (Hidden on Mobile Viewports) -->
                 <li class="hideOnMobile">
                     <a href="\sections">Sections</a>
                 </li>
@@ -67,6 +82,7 @@
                 <li class="hideOnMobile">
                     <a href="https://www.onlinescoutmanager.co.uk/login.php">OSM</a>
                 </li>
+                <!-- Mobile Hamburger Toggle triggering showSidebar() -->
                 <li class="menu-button" onclick=showSidebar()>
                     <a href="#">
                         <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"
@@ -79,6 +95,7 @@
             </ul>
         </nav>
 
+        <!-- Breadcrumb Trail showing Current Hierarchy (Home > Sections > Cubs) -->
         <div class="breadcrumb">
             <ul>
                 <li>
@@ -108,12 +125,18 @@
         </div>
     </header>
 
+    <!-- =====================================================================
+         MAIN CONTENT AREA
+         ===================================================================== -->
     <main>
+        <!-- Section Banner Header (Themed Scout Green via #Cubs_Header) -->
         <div class="main_header" id="Cubs_Header">
             <div>
                 <h1>Cubs</h1>
             </div>
         </div>
+
+        <!-- General Cubs Section Overview & Pack Summary -->
         <div class="Section_Info">
             <h2>Welcome to Cubs!</h2>
             <p>Cubs is the third section of the Scout Movement, welcoming boys and girls aged 6 to 8 years old. It's
@@ -138,7 +161,10 @@
                 enjoy everything that Scouting has to offer.
             </p>
         </div>
+
+        <!-- Interactive Pack Selector Cards: Clicking a card toggles its details block and hides the others -->
         <div class="section_card_holder">
+            <!-- Rowallan Pack Selector Card -->
             <div>
                 <a class="cubs_card" href="#rowallan"
                     onclick="showSection('rowallan'); hideSection('maclean'); hideSection('somers');">
@@ -150,6 +176,7 @@
                     <p><b>Rowallan Pack</b></p>
                 </a>
             </div>
+            <!-- Maclean Pack Selector Card -->
             <div>
                 <a class="cubs_card" href="#maclean"
                     onclick="showSection('maclean'); hideSection('rowallan'); hideSection('somers');">
@@ -161,6 +188,7 @@
                     <p><b>Maclean Pack</b></p>
                 </a>
             </div>
+            <!-- Somers Pack Selector Card -->
             <div>
                 <a class="cubs_card" href="#somers"
                     onclick="showSection('somers'); hideSection('rowallan'); hideSection('maclean');">
@@ -173,7 +201,10 @@
                 </a>
             </div>
         </div>
+
+        <!-- Expandable Cub Pack Detail Panels (Hidden by default via CSS until clicked) -->
         <div class="Sections" id="Cubs_Sections">
+            <!-- Rowallan Pack Information -->
             <div id="rowallan">
                 <h3>Rowallan Pack</h3>
                 <span class="meeting-day">Tuesday @ 7:00-8:30pm</span>
@@ -183,9 +214,12 @@
                     their time in Rowallan, Cubs can build friendships, develop their confidence and experience
                     everything that Scouting has to offer.
                     <br><br>
-                    Contact the <a href="\contact#rowallan">Rowallan Cub Pack Lead Volunteer</a> for more information about Rowallan Cubs.
+                    Contact the <a href="\contact#rowallan">Rowallan Cub Pack Lead Volunteer</a> for more information
+                    about Rowallan Cubs.
                 </p>
             </div>
+
+            <!-- Maclean Pack Information -->
             <div id="maclean">
                 <h3>Maclean Pack</h3>
                 <span class="meeting-day">Wednesday @ 6:45-8:15pm</span>
@@ -197,9 +231,12 @@
                     Cubs are encouraged to try new things, make friends and learn new skills as part of the 7th
                     Lichfield family.
                     <br><br>
-                    Contact the <a href="\contact#maclean">Maclean Cub Pack Lead Volunteer</a> for more information about Maclean Cubs.
+                    Contact the <a href="\contact#maclean">Maclean Cub Pack Lead Volunteer</a> for more information
+                    about Maclean Cubs.
                 </p>
             </div>
+
+            <!-- Somers Pack Information -->
             <div id="somers">
                 <h3>Somers Pack</h3>
                 <span class="meeting-day">Saturday @ 10:30-12:00pm</span>
@@ -213,10 +250,15 @@
                     develop their confidence, learn new skills and take part in exciting adventures as part of the 7th
                     Lichfield family.
                     <br><br>
-                    Contact the <a href="\contact#somers">Somers Cub Pack Lead Volunteer</a> for more information about Somers Cubs.
+                    Contact the <a href="\contact#somers">Somers Cub Pack Lead Volunteer</a> for more information about
+                    Somers Cubs.
                 </p>
             </div>
+
+            <!-- White Horizontal Divider -->
             <div class="div_break" id="break"></div>
+
+            <!-- Always-Visible Joining Call-to-Action -->
             <div id="join">
                 <h3>Joining Cubs?</h3>
                 <p>Interested in joining our Cubs section?
@@ -231,10 +273,16 @@
         </div>
     </main>
 
+    <!-- =====================================================================
+         SITE FOOTER
+         ===================================================================== -->
     <footer>
+        <!-- White HQ Logo -->
         <img src="\Images/7th_hq_logo_white.png" alt="7th Lichfield Scouts Logo">
         <hr>
+        <!-- Footer Multi-Column Links -->
         <div class="footer_content">
+            <!-- National Scout Association Links -->
             <div class="footer_section">
                 <h2>Useful Links</h2>
                 <a href="https://www.scouts.org.uk/">The Scout Association</a><br>
@@ -242,6 +290,7 @@
                 <a href="https://www.scouts.org.uk/activities/">Scouting Activities</a><br>
                 <a href="https://www.scouts.org.uk/join/">Join Scouts</a><br>
             </div>
+            <!-- Internal Quick Navigation Links -->
             <div class="footer_section">
                 <h2>More Info</h2>
                 <a href="\sections">Sections</a><br>
@@ -250,16 +299,19 @@
                 <a href="\contact">Contact Us</a><br>
                 <a href="https://www.onlinescoutmanager.co.uk/login.php">OSM</a><br>
             </div>
+            <!-- Social Media Section Placeholder -->
             <div class="footer_section">
                 <h2>Follow Us</h2>
             </div>
         </div>
         <hr>
-        <p><small>7th Lichfield Scout Group is a registered charity.<br>Our charity number is: 1021870.<br>&copy; 2026
+        <!-- Charity Registration Number & Copyright Notice -->
+        <p><small>7th Lichfield Scout Group is a registered charity.<br>Our charity number is: 1021870.<br>© 2026
                 7th Lichfield Scouts. All rights reserved.</small>
         </p>
     </footer>
 
+    <!-- Scripts for Mobile Sidebar Toggle and Expandable Section Panels -->
     <script src="\JS/Menu.js"></script>
     <script src="\JS/Sections.js"></script>
 </body>

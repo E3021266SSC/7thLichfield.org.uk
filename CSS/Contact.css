@@ -1,6 +1,9 @@
-/*Conact Details*/
+/* ==========================================================================
+   CONTACT DETAILS SECTION
+   Styles the main container and two-column flexbox grid for leader contacts.
+   ========================================================================== */
 
-.contact_details { /* This is the styling for the container that holds the contact details section */
+.contact_details {
     background-color: var(--ScoutLightGrey);
     max-width: 1000px;
     margin-left: auto;
@@ -9,11 +12,12 @@
     padding: 20px;
 }
 
-.contact_details h2 { /* This is the styling for the heading of the contact details section */
+.contact_details h2 {
     padding-top: 10px;
 }
 
-.contact_details .details{ /* This is the styling for the container that holds the contact details */
+/* Flexbox container wrapping contact cards with a 20px gutter */
+.contact_details .details {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -21,11 +25,13 @@
     gap: 20px;
 }
 
-.contact_details .details div{ /* This is the styling for the individual contact details */
+/* Sets a 2-column layout (50% width minus half of the 20px flexbox gap) */
+.contact_details .details div {
     width: calc(50% - 10px);
 }
 
-.contact_details .form{ /* This is the styling for the contact form button */
+/* CTA button linking out to the dedicated contact form page */
+.contact_details .form {
     display: flex;
     justify-content: center;
     background-color: var(--ScoutBlue);
@@ -43,31 +49,38 @@
     transition: all .3s ease;
 }
 
-.contact_details .form:hover{ /* This is the styling for the contact form button when hovered over */
+/* Inverts button colors on hover using Scout brand variables */
+.contact_details .form:hover {
     background-color: var(--ScoutLightGrey);
     color: var(--ScoutNavy);
     border: 1px solid var(--ScoutNavy);
 }
 
-:target{
+/* Highlights and expands a specific section contact card when jumped to via URL hash (e.g., #acorn) */
+:target {
     width: 100% !important;
     text-align: center;
 }
 
-:target h4{
+:target h4 {
     color: var(--ScoutPurple);
 }
 
-@media(max-width:695px){ /* This is the styling for the contact details section when the screen width is less than 695px */
-    .contact_details .details div{
+/* Mobile Breakpoint: Collapses the 2-column contact grid into a centered single column */
+@media(max-width:695px) {
+    .contact_details .details div {
         width: 100%;
         text-align: center;
     }
 }
 
-/* Location Card */
 
-.location { /* This is the styling for the container that holds the location section */
+/* ==========================================================================
+   LOCATION & MAP SECTION
+   Side-by-side split layout for the embedded Google Map and HQ address.
+   ========================================================================== */
+
+.location {
     background-color: var(--ScoutLightGrey);
     max-width: 1000px;
     margin-left: auto;
@@ -79,20 +92,23 @@
     height: 300px;
 }
 
-.location div{ /* This is the styling for the container that holds the map and address in the location section */
+/* Equal 50/50 split columns for the map iframe and postal address */
+.location div {
     width: 50%;
     height: unset;
     margin: 0 10px;
     align-content: center;
 }
 
-.location div iframe{ /* This is the styling for the iframe that holds the Google Maps map in the location section */
+/* Forces the Google Maps iframe to fill its parent column completely */
+.location div iframe {
     width: 100%;
     height: 100%;
 }
 
-@media(max-width:650px){ /* This is the styling for the location section when the screen width is less than 650px */
-    .location{
+/* Tablet/Mobile Breakpoint: Stacks address above the map using column-reverse */
+@media(max-width:650px) {
+    .location {
         flex-direction: column-reverse;
         align-items: center;
         text-align: center;
@@ -106,9 +122,13 @@
     }
 }
 
-/* Safeguarding Card */
 
-.safeguarding_card { /* This is the styling for the container that holds the safeguarding card section */
+/* ==========================================================================
+   SAFEGUARDING & SAFETY CARD
+   High-visibility yellow banner highlighting Scout safety policies and CEOP.
+   ========================================================================== */
+
+.safeguarding_card {
     border-radius: 20px;
     margin: 10px;
     padding: 20px;
@@ -121,24 +141,26 @@
     align-items: center;
 }
 
-.safeguarding_card div { /* This is the styling for the container that holds the content of the safeguarding card section */
+.safeguarding_card div {
     margin: 20px;
 }
 
-.safeguarding_card img { /* This is the styling for the image in the safeguarding card section */
+/* Adds spacing above the CEOP click-to-report badge */
+.safeguarding_card img {
     margin-top: 10px;
 }
 
-.safeguarding_card a { /* This is the styling for the links in the safeguarding card section */
+.safeguarding_card a {
     color: black;
     text-decoration: none;
 }
 
-.safeguarding_card a:hover { /* This is the styling for the links in the safeguarding card section when hovered over */
+.safeguarding_card a:hover {
     text-decoration: underline;
 }
 
-.safeguarding_card .purple_card { /* This is the styling for the purple card in the safeguarding card section */
+/* Prominent button styling for the Scout Association's emergency 'Purple Card' */
+.safeguarding_card .purple_card {
     color: white;
     font-size: 17px;
     text-decoration: none;
@@ -152,12 +174,13 @@
     transition: all .3s ease;
 }
 
-.safeguarding_card .purple_card:hover { /* This is the styling for the purple card in the safeguarding card section when hovered over */
+.safeguarding_card .purple_card:hover {
     background-color: var(--ScoutYellow);
     color: var(--ScoutTextGrey);
 }
 
-@media(max-width:500px) { /* This is the styling for the safeguarding card section when the screen width is less than 500px */
+/* Mobile Breakpoint: Stacks safeguarding columns vertically and stretches the Purple Card button */
+@media(max-width:500px) {
     .safeguarding_card {
         flex-direction: column;
     }
