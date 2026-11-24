@@ -48,6 +48,33 @@
   padding: 5px;
 }
 
+.squirrels_card svg {
+  width: 160.5px;
+  height: 36px;
+}
+
+.beavers_card svg {
+  width: 135px;
+  height: 37.5px;
+}
+
+.cubs_card svg {
+  width: 85.5px;
+  height: 34.5px;
+}
+
+.scouts_card svg {
+  width: 139.5px;
+  height: 27px;
+}
+
+.squirrels_card p,
+.beavers_card p,
+.cubs_card p,
+.scouts_card p {
+  font-size: 24px;
+}
+
 /* Shared hover state: scales card up by 10%, deepens drop-shadow, and sets text to white */
 .squirrels_card:hover,
 .beavers_card:hover,
@@ -93,33 +120,6 @@
   .scouts_card {
     height: 150px;
     width: 250px;
-  }
-
-  .squirrels_card svg {
-    width: 160.5px;
-    height: 36px;
-  }
-
-  .beavers_card svg {
-    width: 135px;
-    height: 37.5px;
-  }
-
-  .cubs_card svg {
-    width: 85.5px;
-    height: 34.5px;
-  }
-
-  .scouts_card svg {
-    width: 139.5px;
-    height: 27px;
-  }
-
-  .squirrels_card p,
-  .beavers_card p,
-  .cubs_card p,
-  .scouts_card p {
-    font-size: 24px;
   }
 }
 

@@ -27,3 +27,11 @@ function hideSidebar() {
     // Strip inline height and overflow styles to re-enable normal document scrolling
     body.removeAttribute('style');
 }
+
+window.addEventListener('DOMContentLoaded', async () => {
+    const header = await fetch('/backend/header.html').then(r => r.text());
+    document.getElementById('header').innerHTML = header;
+
+    const footer = await fetch('/backend/footer.html').then(r => r.text());
+    document.getElementById('footer').innerHTML = footer;
+});

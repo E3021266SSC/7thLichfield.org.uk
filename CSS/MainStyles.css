@@ -132,13 +132,13 @@ sup {
 
 /* Default inline link styling */
 a {
-  color: #006ddf;
+  color: var(--ScoutBlue);
   text-decoration: none;
   background-color: transparent
 }
 
 a:hover {
-  color: #004893;
+  color: var(--ScoutNavy);
   text-decoration: underline
 }
 
@@ -155,38 +155,14 @@ a:not([href]):hover {
 
 /* Utility class to strip standard blue link styling and inherit surrounding body text color */
 .revert_link {
-  color: #404040;
+  color: var(--ScoutTextGrey);
   text-decoration: none
 }
 
 /* Large Desktop Breakpoint: Scales up base body text and heading hierarchy for wide viewports */
 @media(min-width: 1200px) {
-  body {
-    font-size: 1.25rem;
-  }
-
-  h1 {
-    font-size: 3rem
-  }
-
-  h2 {
-    font-size: 2.5rem
-  }
-
-  h3 {
-    font-size: 2rem
-  }
-
-  h4 {
-    font-size: 1.75rem
-  }
-
-  h5 {
-    font-size: 1.5rem
-  }
-
-  h6 {
-    font-size: 1.25rem
+  *{
+    font-size: 20px;
   }
 }
 

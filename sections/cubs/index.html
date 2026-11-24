@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <!-- Document Title -->
@@ -26,74 +26,7 @@
          SITE HEADER & NAVIGATION
          ===================================================================== -->
     <header>
-        <nav>
-            <!-- Slide-Out Mobile Navigation Drawer (Controlled by JS) -->
-            <ul class="sidebar">
-                <!-- Close Button triggering hideSidebar() -->
-                <li onclick=hideSidebar()>
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                            fill="#1f1f1f">
-                            <title id="uniqueTitleID">Exit Navigation Menu</title>
-                            <path
-                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-                        </svg>
-                    </a>
-                </li>
-                <!-- Mobile Drawer Navigation Links -->
-                <li>
-                    <a href="\sections">Sections</a>
-                </li>
-                <li>
-                    <a href="\activities_events">Activities & Events</a>
-                </li>
-                <li>
-                    <a href="\about">About Us</a>
-                </li>
-                <li>
-                    <a href="\contact">Contact Us</a>
-                </li>
-                <li>
-                    <a href="https://www.onlinescoutmanager.co.uk/login.php target="_blank"">OSM</a>
-                </li>
-            </ul>
-
-            <!-- Primary Desktop Navigation Bar -->
-            <ul class="navbar">
-                <!-- Group Logo / Home Link -->
-                <li class="logo">
-                    <a href="\">
-                        <img src="\Images/7thLogoB.png" alt="7th Lichfield Scouts Logo" style="height: 100px;">
-                    </a>
-                </li>
-                <!-- Desktop Nav Links (Hidden on Mobile Viewports) -->
-                <li class="hideOnMobile">
-                    <a href="\sections">Sections</a>
-                </li>
-                <li class="hideOnMobile">
-                    <a href="\activities_events">Activities & Events</a>
-                </li>
-                <li class="hideOnMobile">
-                    <a href="\about">About Us</a>
-                </li>
-                <li class="hideOnMobile">
-                    <a href="\contact">Contact Us</a>
-                </li>
-                <li class="hideOnMobile">
-                    <a href="https://www.onlinescoutmanager.co.uk/login.php" target="_blank">OSM</a>
-                </li>
-                <!-- Mobile Hamburger Toggle triggering showSidebar() -->
-                <li class="menu-button" onclick=showSidebar()>
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"
-                            fill="#1f1f1f">
-                            <title id="uniqueTitleID">Navigation Menu</title>
-                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+        <nav id="header"></nav>
 
         <!-- Breadcrumb Trail showing Current Hierarchy (Home > Sections > Cubs) -->
         <div class="breadcrumb">
@@ -276,41 +209,8 @@
     <!-- =====================================================================
          SITE FOOTER
          ===================================================================== -->
-    <footer>
-        <!-- White HQ Logo -->
-        <img src="\Images/7th_hq_logo_white.png" alt="7th Lichfield Scouts Logo">
-        <hr>
-        <!-- Footer Multi-Column Links -->
-        <div class="footer_content">
-            <!-- National Scout Association Links -->
-            <div class="footer_section">
-                <h2>Useful Links</h2>
-                <a href="https://www.scouts.org.uk/" target="_blank">The Scout Association</a><br>
-                <a href="https://www.scouts.org.uk/volunteers/" target="_blank">Volunteer with Scouts</a><br>
-                <a href="https://www.scouts.org.uk/activities/" target="_blank">Scouting Activities</a><br>
-                <a href="https://www.scouts.org.uk/join/" target="_blank">Join Scouts</a><br>
-            </div>
-            <!-- Internal Quick Navigation Links -->
-            <div class="footer_section">
-                <h2>More Info</h2>
-                <a href="\sections">Sections</a><br>
-                <a href="\activities_events">Activities & Events</a><br>
-                <a href="\about">About Us</a><br>
-                <a href="\contact">Contact Us</a><br>
-                <a href="https://www.onlinescoutmanager.co.uk/login.php" target="_blank">OSM</a><br>
-            </div>
-            <!-- Social Media Section Placeholder -->
-            <div class="footer_section">
-                <h2>Follow Us</h2>
-            </div>
-        </div>
-        <hr>
-        <!-- Charity Registration Number & Copyright Notice -->
-        <p><small>7th Lichfield Scout Group is a registered charity.<br>Our charity number is: 1021870.<br>© 2026
-                7th Lichfield Scouts. All rights reserved.</small>
-        </p>
-    </footer>
-
+    <footer id="footer"></footer>
+    
     <!-- Scripts for Mobile Sidebar Toggle and Expandable Section Panels -->
     <script src="\JS/Menu.js"></script>
     <script src="\JS/Sections.js"></script>
